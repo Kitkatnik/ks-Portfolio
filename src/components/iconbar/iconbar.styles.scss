@@ -1,9 +1,36 @@
-.iconBar {
+.iconbar {
     background-color: #2B2B46;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 
-    .iconbar-icons{
-        margin: 1%;
+    .icons{
         font-size: 1.5em;
+        width: 100%;
+        text-align: center;
+        padding: 5px 0 0 0;
+    }
+    .icons:hover{
+        background-color: #1D1D2E;
+    }
+}
+
+@media all and (min-width: 600px){
+    .iconbar {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        flex-basis: 50px;
+
+        .icons {
+            font-size: 1.5em;
+            padding-bottom: 5px;
+        }
+
+        .icons:nth-child(1){
+            padding-top: 20%;
+        }
     }
 }
 

@@ -1,0 +1,44 @@
+.status-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #151523;
+    border-radius: 0 0 10px 10px;
+    padding: 5px 15px;
+    font-size: 0.7em;
+    font-family: -apple-system,BlinkMacSystemFont,sans-serif;
+    font-weight: 300;
+    border-top: 1px solid #1a1a2a;
+    
+    a {
+        cursor: pointer;
+    }
+
+    .status-left{
+        flex-grow: 1;
+
+        .status{
+            padding-right: 15px; 
+
+            .space {
+                padding-right: 5px;
+            }
+        }
+    }
+
+    .status-align{
+        vertical-align: 11%;
+    }
+
+    .status-right{
+        flex-grow: 1;
+        text-align: right;
+
+        .status {
+            padding-left: 15px;
+        }
+        .space {
+            padding-left: 5px;
+        }
+    }
+}

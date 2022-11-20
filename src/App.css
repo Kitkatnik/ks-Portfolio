@@ -1,14 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-    background-color: #171727;
+    background-color: #000000;
     font-family: 'Space Mono', monospace;
     color: #C1C1D8;
+}
+
+a {
+    text-decoration: none;
+    color: #C1C1D8;
+}
+
+.browser{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    height: 100%;
 }
 
 .app { 
     display: flex;
     flex-direction: column;
+    height: max-content;
+    flex: 1 1 auto;
 }
 
 @media all and (min-width: 600px){

@@ -1,14 +1,22 @@
 import './iconbar.styles.scss'
-import { IconContext } from 'react-icons';
-import { AiOutlineMail } from 'react-icons/ai';
-
+import { 
+    VscCallOutgoing, 
+    VscMail, 
+    VscGithub,
+} from 'react-icons/vsc';
+import { 
+    SiLinkedin, 
+    SiPolywork 
+} from 'react-icons/si';
 
 const IconBar = () => {
     return (
-            <div className='iconBar'>
-                <span className="iconbar-icons">
-                    <AiOutlineMail />
-                </span>
+            <div className='iconbar'>
+                <span className="icons"><VscCallOutgoing /></span>
+                <span className="icons"><VscMail /></span>
+                <span className="icons"><VscGithub /></span>
+                <span className="icons si"><SiLinkedin /></span>
+                <span className="icons si"><SiPolywork /></span>
             </div>
     )
 }

@@ -1,0 +1,47 @@
+.browser-window {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #151523;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #1a1a2a;
+    padding: 3px 5px 2px 0;
+
+    .browser-options {
+        // background-color: green;
+        margin-left: 0.5em;
+        flex-grow: 3;
+        font-size: 1.3em;
+        margin-bottom: -6px;
+        vertical-align: 0;
+
+        .close-button {
+            color: #fe6057;
+            display: inline;
+        }
+        .minimize-button {
+            color: #fdbc2e;
+        }
+        .maximize-button {
+            color: #28c840;
+        }
+    }
+    .file-name{
+        font-size: 0.7em;
+        font-family: -apple-system,BlinkMacSystemFont,sans-serif;
+        font-weight: 300;
+        flex-grow: 2;
+    }
+
+    .panel-options{
+        color: #e7e7e7;
+        flex-grow: 1;
+        text-align: right;
+        padding-top: 3px;
+        padding-right: 10px;
+
+        .panel-icon {
+            padding-left: 5px;
+        }
+    }
+}
