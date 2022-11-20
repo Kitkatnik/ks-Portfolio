@@ -1,6 +1,8 @@
 import './explorer.styles.scss'
 
 import { 
+    VscEllipsis,
+    VscChevronDown,
     VscAccount, 
     VscFolder, 
     VscFolderOpened, 
@@ -24,21 +26,33 @@ import {
 const Explorer = () => {
     return (
             <div className="explorer">
-                <div className="folder">
-                    <span className="about"><VscAccount /></span>
-                    <p>ABOUT</p>
+                <div className="explorer-header">
+                    <p>EXPLORER</p>
+                    <span><VscEllipsis /></span>
                 </div>
-                <div className="folder">
-                    <span className="about"><VscFolder /></span>
-                    <p>RESUME</p>
+                <div className="explorer-divider">
+                    <span>
+                        <VscChevronDown />
+                    </span>
+                    <p>PORTFOLIO (WORKSPACE)</p>
                 </div>
-                <div className="folder">
-                    <span className="about"><VscFolder /></span>
-                    <p>STATS</p>
-                </div>
-                <div className="folder">
-                    <span className="about"><VscFolder /></span>
-                    <p>PROJECTS</p>
+                <div className="explorer-links">
+                    <div className="folder">
+                        <span className="about"><VscAccount /></span>
+                        <p>About</p>
+                    </div>
+                    <div className="folder">
+                        <span className="about"><VscFolder /></span>
+                        <p>Resume</p>
+                    </div>
+                    <div className="folder">
+                        <span className="about"><VscFolder /></span>
+                        <p>Stats</p>
+                    </div>
+                    <div className="folder">
+                        <span className="about"><VscFolder /></span>
+                        <p>Projects</p>
+                    </div>
                 </div>
             </div>
     )

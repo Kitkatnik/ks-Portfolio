@@ -1,14 +1,62 @@
 .explorer{
     background-color: #171727;
+    font-family: -apple-system,BlinkMacSystemFont,sans-serif;
+    font-weight: 300;
+    min-width: 200px;
 
-    .folder {
+    .explorer-header {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        padding: 10px 15px 10px 25px;
 
-        .about {
-            color: yellow;
+        p{ 
+            font-size: 0.7em;
+        }
+        span{
+            font-size: 0.9em;
         }
     }
+
+    .explorer-divider{
+        display: flex;
+        background-color: #1D1D2E;
+        padding: 2px 0;
+        border-bottom: 1px solid #151523;
+
+        span{
+            padding-left: 4px;
+            font-size: 0.9em;
+        }
+
+        p{
+            font-size: 0.6em;
+            font-weight: bold;
+            padding: 2px 0 2px 5px;
+        }
+    }
+
+    .explorer-links{
+
+        .folder {
+            display: flex;
+            align-items: center;
+            background-color: rgb(0,0,0, 0);
+            padding: 5px 20px;
+
+            span {
+                font-size: 0.8em;
+            }
+
+            p {
+                padding-left: 10px;
+                font-size: 0.8em;
+            }
+        }
+
+        .folder:hover{
+            background-color: #353561;
+        }
+    }
+
 
 }
