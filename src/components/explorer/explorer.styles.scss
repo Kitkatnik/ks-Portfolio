@@ -1,0 +1,14 @@
+.explorer{
+    background-color: #1D1D2E;
+
+    .folder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .about {
+            color: yellow;
+        }
+    }
+
+}
