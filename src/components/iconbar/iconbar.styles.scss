@@ -4,6 +4,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    z-index: 100;
 
     .icons{
         font-size: 1.5em;
@@ -21,10 +22,10 @@
         flex-direction: column;
         justify-content: flex-start;
         height: 100%;
-        flex-basis: 50px;
+        flex-basis: 55px;
 
         .icons {
-            font-size: 1.5em;
+            font-size: 1.6em;
             padding-bottom: 5px;
         }
 
@@ -33,4 +34,12 @@
         }
     }
 }
+
+// TODO: in mobile, only have a few default VSCode settings like remote, trust, main, lines, spaces, javascript, notifications
+
+// BUG: Fix the height of about in mobile
+
+// TODO: Create a hamburger menu for mobile (using explorer - replace the three dots)
+
+// TODO: Add breakpoint for bottom icon bar to show more icons as it gets bigger 
 

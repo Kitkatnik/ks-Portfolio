@@ -3,8 +3,14 @@
     font-family: -apple-system,BlinkMacSystemFont,sans-serif;
     font-weight: 300;
     min-width: 200px;
+    max-width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 0;
 
-    .explorer-header {
+    .header {
         display: flex;
         justify-content: space-between;
         padding: 10px 15px 10px 25px;
@@ -17,46 +23,104 @@
         }
     }
 
-    .explorer-divider{
+    .files{
         display: flex;
-        background-color: #1D1D2E;
-        padding: 2px 0;
-        border-bottom: 1px solid #151523;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 2;
+        min-width: 0;
+        min-height: 0;
 
-        span{
-            padding-left: 4px;
-            font-size: 0.9em;
-        }
+        .top{
+            flex-grow: 1;
+            display: grid;
+            grid-template-rows: auto auto 2fr;
+            min-width: 0;
+            min-height: 0;
 
-        p{
-            font-size: 0.6em;
-            font-weight: bold;
-            padding: 2px 0 2px 5px;
-        }
-    }
-
-    .explorer-links{
-
-        .folder {
-            display: flex;
-            align-items: center;
-            background-color: rgb(0,0,0, 0);
-            padding: 5px 20px;
-
-            span {
-                font-size: 0.8em;
+            .divider{
+                display: flex;
+                background-color: #1D1D2E;
+                padding: 2px 0 1px 0;
+                border-bottom: 1px solid #0e0e17;
+        
+                span{
+                    padding-left: 4px;
+                    font-size: 0.9em;
+                }
+        
+                p{
+                    font-size: 0.7em;
+                    font-weight: bold;
+                    padding: 1px 0 1px 5px;
+                }
             }
 
-            p {
-                padding-left: 10px;
+            .shadow{
+                border-bottom: 1px solid #1d1d2e;
+                box-shadow: 0px 2px 1px 0px rgba(10, 9, 15, 0.9);
+                overflow: hidden;
+                z-index:2;
+            }
+
+            .links{
+                z-index:1;
+                overflow-y: scroll;
+                min-width: 0;
+                min-height: 0;
                 font-size: 0.8em;
+                background-color: rgb(0,0,0, 0);
+                // border: 5px solid blue;
+
+                .folder {
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    background-color: rgb(0,0,0, 0);
+                    padding: 5px 20px;
+                    // border: 2px solid yellow;
+        
+                    p {
+                        padding-left: 10px;
+                    }
+                }
+        
+                .folder:hover{
+                    background-color: #353561;
+                }
+
+                .projects{
+                    align-self: stretch;
+                    // border: 5px solid red;
+                    span{
+                        padding-left: 20px;
+                    }
+                }
             }
         }
+        .bottom{
 
-        .folder:hover{
-            background-color: #353561;
+            .divider{
+                display: flex;
+                background-color: #1D1D2E;
+                padding: 2px 0 1px 0;
+                border-bottom: 1px solid #0e0e17;
+        
+                span{
+                    padding-left: 4px;
+                    font-size: 0.9em;
+                }
+        
+                p{
+                    font-size: 0.7em;
+                    font-weight: bold;
+                    padding: 1px 0 1px 5px;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
         }
     }
-
-
 }
