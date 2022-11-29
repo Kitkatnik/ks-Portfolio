@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+<h2>Mockup</h2>
 
-In the project directory, you can run:
+<img width="50%" alt="Portfolio MockUp that looks like VSCode" src="https://user-images.githubusercontent.com/5871075/204670157-a0335eb6-9ee6-4f04-bc1c-e623a3c51aa7.png">
 
-### `npm start`
+[See full mockup here](https://www.figma.com/file/GqXYhDV2zVOPyfx5gRmOOh/P21563---HW-Portfolio?node-id=0%3A1&t=Kep3FCw2dpJ7BLso-1)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2>Screenshot</h2>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Screenshot coming soon
 
-### `npm test`
+[See work in progress demo here](https://katya-sarmiento-portfolio.vercel.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</div>
 
-### `npm run build`
+## Description
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 💼 About this project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+About a year ago, I asked my [design team](https://app.manypixels.co/onboard?referral=cjxam0civ6d1z07704c0glafm) *(affiliate link)* to create [a mockup of a portfolio site that looks like a code editor](https://www.figma.com/file/GqXYhDV2zVOPyfx5gRmOOh/P21563---HW-Portfolio?node-id=0%3A1&t=Kep3FCw2dpJ7BLso-1). This mockup was for my partner, who had recently graduated Thinkful Software Engineering Immersion. He never built the website, so I took the mockup for myself and started to build it out from scratch to practice React. I changed it a bit to more closely resemble my own VSCode editor, including small easter eggs and links to extensions that I use on a daily basis.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🖥 About the tech stack
 
-### `npm run eject`
+![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=for-the-badge) ![CSS3 Badge](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=for-the-badge) ![Sass Badge](https://img.shields.io/badge/Sass-C69?logo=sass&logoColor=fff&style=for-the-badge) ![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=for-the-badge) ![React Badge](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=for-the-badge) ![Create React App Badge](https://img.shields.io/badge/Create%20React%20App-09D3AC?logo=createreactapp&logoColor=fff&style=for-the-badge) ![Yarn Badge](https://img.shields.io/badge/Yarn-2C8EBB?logo=yarn&logoColor=fff&style=for-the-badge) ![GitHub Badge](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=for-the-badge) ![Vercel Badge](https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=fff&style=for-the-badge)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🧠 What I learned
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Taking a [Figma Mockup](https://www.figma.com/file/GqXYhDV2zVOPyfx5gRmOOh/P21563---HW-Portfolio?node-id=0%3A1&t=Kep3FCw2dpJ7BLso-1) and building it from scratch
+- Using Github's API to import my repositories, using a special character to only showcase certain projects I designate
+- *To be continued...*
