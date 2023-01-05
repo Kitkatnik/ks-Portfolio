@@ -71,7 +71,7 @@
                 font-size: 0.8em;
 
                 .home{
-                    margin-top: 2%;
+                    margin-top: 1%;
                 }
 
                 .folder {
@@ -117,9 +117,14 @@
                         padding-left: 5px;
                     }
                 }
-        
                 .folder:hover{
-                    background-color: #353561;
+                    background-color: rgba(53, 53, 97, 0.5);
+                }
+
+        
+                .linkActive{
+                    background-color: rgba(139, 139, 191, 0.25);
+                    // border: 1px solid #8b8bbf;
                 }
 
                 .projects{
