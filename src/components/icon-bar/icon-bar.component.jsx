@@ -1,4 +1,4 @@
-import './iconbar.styles.scss'
+import './icon-bar.styles.scss'
 import { 
     VscCallOutgoing, 
     VscMail, 
