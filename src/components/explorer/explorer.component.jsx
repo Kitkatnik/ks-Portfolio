@@ -31,16 +31,16 @@ const Explorer = () => {
                             <p>PORTFOLIO (WORKSPACE)</p>
                         </div>
                         <div className="links">
-                            <div className="folder">
+                            <div className="folder home">
                                 <span><VscAccount /></span>
-                                <p>About</p>
+                                <p>Home</p>
                             </div>
                             <div className="folder">
                                 <span><VscBriefcase /></span>
                                 <p>Resume</p>
                             </div>
-                            {/* <div className="folder">
-                                <span><VscDashboard /></span>
+                            {/* <div className="folder stats">
+                                <span className="stats"><VscDashboard /></span>
                                 <p>Stats</p>
                             </div> */}
                             <div className="folder">

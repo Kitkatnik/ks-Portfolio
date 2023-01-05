@@ -69,19 +69,32 @@
                 min-width: 0;
                 min-height: 0;
                 font-size: 0.8em;
-                background-color: rgb(0,0,0, 0);
-                // border: 5px solid blue;
 
+                .home{
+                    margin-top: 2%;
+                }
                 .folder {
                     display: flex;
                     align-items: center;
                     justify-items: center;
-                    background-color: rgb(0,0,0, 0);
-                    padding: 5px 20px;
-                    // border: 2px solid yellow;
+                    padding: 2% 10%;
+                    // line-height: 0; 
+
+                    span{
+                        display: inline-block;
+                        line-height: 0;
+                        vertical-align: center;
+                        text-align: center;
+                        font-size: 1.1em;
+                    }
+                    
+                    .stats{
+                        font-size: 1.2em;
+                    }
         
                     p {
-                        padding-left: 10px;
+                        font-size: 1em;
+                        padding-left: 5px;
                     }
                 }
         
@@ -90,10 +103,9 @@
                 }
 
                 .projects{
-                    align-self: stretch;
-                    // border: 5px solid red;
+                    line-height: 0;
                     span{
-                        padding-left: 20px;
+                        padding-left: 10%;
                     }
                 }
             }
