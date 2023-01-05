@@ -73,12 +73,35 @@
                 .home{
                     margin-top: 2%;
                 }
+
                 .folder {
                     display: flex;
                     align-items: center;
                     justify-items: center;
                     padding: 2% 10%;
                     // line-height: 0; 
+
+                    .yellow{
+                        color: #fbc02d;
+                    }
+
+                    .blue{
+                        color: #059be5;
+                        // color: #03bbd4;
+                    }
+
+                    .green{
+                        color: #4caf50;
+                        // color: #8bc24b;
+                    }
+
+                    .purple{
+                        color: #a677e0;
+                    }
+
+                    .red{
+                        color: #ff5252;
+                    }
 
                     span{
                         display: inline-block;
@@ -87,10 +110,7 @@
                         text-align: center;
                         font-size: 1.1em;
                     }
-                    
-                    .stats{
-                        font-size: 1.2em;
-                    }
+
         
                     p {
                         font-size: 1em;

@@ -7,9 +7,8 @@ import {
     VscChevronDown,
     VscAccount, 
     VscFolderOpened, 
-    VscFileCode, 
     VscBriefcase, 
-    VscDashboard,
+    VscPulse,
     VscCode
 } from 'react-icons/vsc';
 
@@ -32,32 +31,32 @@ const Explorer = () => {
                         </div>
                         <div className="links">
                             <div className="folder home">
-                                <span><VscAccount /></span>
+                                <span className="red"><VscAccount /></span>
                                 <p>Home</p>
                             </div>
                             <div className="folder">
-                                <span><VscBriefcase /></span>
+                                <span className="yellow"><VscBriefcase /></span>
                                 <p>Resume</p>
                             </div>
-                            {/* <div className="folder stats">
-                                <span className="stats"><VscDashboard /></span>
+                            <div className="folder stats">
+                                <span className="stats purple"><VscPulse /></span>
                                 <p>Stats</p>
-                            </div> */}
+                            </div>
                             <div className="folder">
-                                <span><VscFolderOpened /></span>
+                                <span className="green"><VscFolderOpened /></span>
                                 <p>Projects</p>
                             </div>
                             <div className="projects">
                                 <div className="folder">
-                                    <span><VscCode /></span>
+                                    <span className="blue"><VscCode /></span>
                                     <p>Links here</p>
                                 </div>
                                 <div className="folder">
-                                    <span><VscCode /></span>
+                                    <span className="blue"><VscCode /></span>
                                     <p>Links here</p>
                                 </div>
                                 <div className="folder">
-                                    <span><VscCode /></span>
+                                    <span className="blue"><VscCode /></span>
                                     <p>Links here</p>
                                 </div>
                             </div>
