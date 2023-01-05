@@ -6,23 +6,11 @@ import {
     VscChevronRight,
     VscChevronDown,
     VscAccount, 
-    VscFolder, 
     VscFolderOpened, 
     VscFileCode, 
-    VscSymbolFile, 
-    VscFile,
-    VscNewFile, 
     VscBriefcase, 
-    VscBookmark, 
-    VscCode,
     VscDashboard,
-    VscCopy,
-    VscHistory,
-    VscMilestone,
-    VscProject,
-    VscPulse,
-    VscPreview,
-    VscMenu
+    VscCode
 } from 'react-icons/vsc';
 
 const Explorer = () => {
@@ -48,99 +36,30 @@ const Explorer = () => {
                                 <p>About</p>
                             </div>
                             <div className="folder">
-                                <span><VscFolder /></span>
+                                <span><VscBriefcase /></span>
                                 <p>Resume</p>
                             </div>
-                            <div className="folder">
-                                <span><VscFolder /></span>
+                            {/* <div className="folder">
+                                <span><VscDashboard /></span>
                                 <p>Stats</p>
-                            </div>
+                            </div> */}
                             <div className="folder">
                                 <span><VscFolderOpened /></span>
                                 <p>Projects</p>
                             </div>
                             <div className="projects">
                                 <div className="folder">
-                                    <span><VscFileCode /></span>
+                                    <span><VscCode /></span>
                                     <p>Links here</p>
                                 </div>
                                 <div className="folder">
-                                    <span><VscFileCode /></span>
+                                    <span><VscCode /></span>
                                     <p>Links here</p>
                                 </div>
                                 <div className="folder">
-                                    <span><VscFileCode /></span>
+                                    <span><VscCode /></span>
                                     <p>Links here</p>
                                 </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span><VscFileCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                
                             </div>
                         </div>
                     </div>

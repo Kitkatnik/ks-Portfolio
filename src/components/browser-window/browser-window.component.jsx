@@ -2,7 +2,6 @@ import './browser-window.styles.scss';
 
 import { 
     VscCircleFilled,
-    VscSearch,
 } from 'react-icons/vsc';
 import {
     RiLayoutLeftLine,
