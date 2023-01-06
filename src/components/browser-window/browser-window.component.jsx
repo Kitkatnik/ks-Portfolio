@@ -2,7 +2,6 @@ import './browser-window.styles.scss';
 
 import { 
     VscCircleFilled,
-    VscSearch,
 } from 'react-icons/vsc';
 import {
     RiLayoutLeftLine,
@@ -20,7 +19,9 @@ const BrowserWindow = () => {
                 <span className="maximize-button"><VscCircleFilled /></span>
             </div>
             <div className="file-name">
-                [NAME OF PAGE HERE].jsx — katya-sarmiento
+                <a href="/">
+                    {/* [NAME OF PAGE HERE].jsx —  */}
+                    katya-sarmiento-portfolio</a>
             </div>
             <div className="panel-options">
                 <span className="panel-icon"><RiLayoutLeftLine /></span>

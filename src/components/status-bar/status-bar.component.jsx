@@ -11,7 +11,8 @@ import {
     VscRocket,
     VscCheckAll,
     VscFeedback,
-    VscBell
+    VscBell,
+    VscFlame
 } from 'react-icons/vsc';
 
 import { IoHeadsetSharp } from 'react-icons/io5';
@@ -21,81 +22,80 @@ const StatusBar = () => {
     return (
         <div className='status-bar'>
             <div className="status-left">
-                <span className="status"><VscRemote /></span>
-                <span className="status"><VscWorkspaceTrusted /></span>
-                <span className="status">
-                    <VscSourceControl /> 
-                    <span className="status-align"> main*</span>
-                </span>
-                <span className="status">
-                    <a href="https://marketplace.visualstudio.com/items?itemName=softwaredotcom.music-time" target="_blank">
-                        <IoHeadsetSharp />
-                        <span className="status-align"> MusicTime </span>
+                <div className="block">
+                    <span><VscRemote /></span>
+                </div>
+                <div className="block">
+                    <span><VscWorkspaceTrusted /></span>
+                </div>
+                <div className="block">
+                    <a href="https://www.gitkraken.com/gitlens" target="_blank" rel="noreferrer" className="extension">
+                        <span><VscSourceControl /></span>
+                        <p>main*</p>
                     </a>
-                </span>
-                <span className="status">
-                    <a href="https://github.com/jest-community/vscode-jest#installation" target="_blank">
-                        <span className="status-align">Jest-WS: </span>
-                        <VscPass />
-                        <span className="status-align space"> 0</span> 
-                        <VscError />
-                        <span className="status-align space"> 0</span> 
-                        <VscQuestion /> 
-                        <span className="status-align"> 0</span>
+                </div>
+                <div className="block">
+                    <a href="https://marketplace.visualstudio.com/items?itemName=softwaredotcom.music-time" target="_blank" rel="noreferrer" className="extension">
+                        <span><IoHeadsetSharp /></span>
+                        <p>MusicTime </p>
                     </a>
-                </span>
-                <span className="status ">
-                    <span className="status-align">
-                        <a href="https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode" target="_blank">Quokka</a>
-                    </span>
-                </span>
-                <span className="status">
-                    <span className="status-align">
-                    <a href="https://marketplace.visualstudio.com/items?itemName=WallabyJs.wallaby-vscode" target="_blank">Wallaby</a>
-                    </span>
-                </span>
+                </div>
+                <div className="block">
+                    <a href="https://jestjs.io/" target="_blank" rel="noreferrer" className="extension">
+                        <p>Jest-WS:</p>
+                        <span><VscPass /></span>
+                        <p className="status-align space">{date.getFullYear().toString().substring(0,2)}</p> 
+                        <span><VscError /></span>
+                        <p className="status-align space">{date.getFullYear().toString().substring(2)}</p>
+                        <span><VscQuestion /> </span>
+                        <p>0</p>
+                    </a>
+                </div>
+                <div className="block">
+                    <a href="https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode" target="_blank" rel="noreferrer" className="extension">
+                        <p>Quokka</p>
+                    </a>
+                </div>
+                <div className="block">
+                    <a href="https://marketplace.visualstudio.com/items?itemName=WallabyJs.wallaby-vscode" target="_blank" rel="noreferrer" className="extension">
+                        <p>Wallaby</p>
+                    </a>
+                </div>
+                <div className="block">
+                    <a href="https://marketplace.visualstudio.com/publishers/stateful" target="_blank" rel="noreferrer" className="extension">
+                        <span><VscFlame /></span>
+                        <p>{date.getDate()}</p>
+                    </a>
+                </div>
             </div>
             <div className="status-right">
-                <span className="status">
-                    <span className="status-align">
-                        Ln {date.getMonth() + 1}, Col {date.getDate()}
-                    </span>
-                </span>
-                <span className="status">
-                    <span className="status-align">
-                        Spaces: 4
-                    </span>
-                </span>
-                <span className="status">
-                    <a href="https://code.visualstudio.com/docs/nodejs/reactjs-tutorial" target="_blank">
-                        <VscSymbolNamespace /> 
-                        <span className="status-align space">
-                            JavaScript React
-                        </span>
+                <div className="block">
+                    <a href="https://reactjs.org/" target="_blank" rel="noreferrer" className="extension">
+                        <span><VscSymbolNamespace /></span>
+                        <p>JavaScript React</p>
                     </a>
-                </span>
-                <span className="status">
-                    <a href="https://marketplace.visualstudio.com/items?itemName=softwaredotcom.swdc-vscode" target="_blank">
-                        <VscRocket /> 
-                        <span className="status-align space">
-                            2h 37m
-                        </span>
+                </div>
+                <div className="block">
+                    <p className="extension">Ln {date.getMonth() + 1}, Col {date.getDate()}</p>
+                </div>
+                <div className="block">
+                    <a href="https://marketplace.visualstudio.com/items?itemName=softwaredotcom.swdc-vscode" target="_blank" rel="noreferrer" className="extension">
+                        <span><VscRocket /></span>
+                        <p>{date.getHours()}h {date.getMinutes()}m</p>
                     </a>
-                </span>
-                <span className="status">
-                    <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank">
-                        <VscCheckAll /> 
-                        <span className="status-align space">
-                            Prettier
-                        </span>
+                </div>
+                <div className="block">
+                    <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" rel="noreferrer" className="extension">
+                        <span><VscCheckAll /></span>
+                        <p>Prettier</p>
                     </a>
-                </span>
-                <span className="status">
-                    <VscFeedback />
-                </span>
-                <span className="status">
-                    <VscBell />
-                </span>
+                </div>
+                <div className="block">
+                    <span><VscFeedback /></span>
+                </div>
+                <div className="block">
+                    <span><VscBell /></span>
+                </div>
             </div>
         </div>
     )

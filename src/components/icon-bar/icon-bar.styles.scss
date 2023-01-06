@@ -1,0 +1,40 @@
+.iconbar {
+    background-color: #2B2B46;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 100;
+    height: 100%;
+    flex-basis: 70px;
+
+    a:nth-child(1){
+        padding-top: 20%;
+    }
+
+    a{
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+        color: rgb(132, 132, 179);
+        padding: 10% 0%;
+    }
+    a:hover{
+        color: rgb(231, 231, 231);
+    }
+}
+
+@media all and (max-width: 600px){
+    .iconbar {
+        flex-direction: row;
+        justify-content: space-around;
+        
+
+        .icons {
+            font-size: 1.6em;
+            padding-bottom: 5px;
+        }
+
+        
+    }
+}
