@@ -1,3 +1,6 @@
+import SimpleBar from 'simplebar-react';
+import 'simplebar/dist/simplebar.min.css';
+
 import './explorer.styles.scss'
 import vscodepets from '../../assets/vscodepets.png';
 
@@ -34,7 +37,7 @@ const Explorer = () => {
                             <span><VscChevronDown /></span>
                             <p>PORTFOLIO (WORKSPACE)</p>
                         </div>
-                        <div className="links">
+                        <SimpleBar className="links">
                             <div className="folder home linkActive">
                                 <span className="red"><VscAccount /></span>
                                 <p>Home</p>
@@ -113,7 +116,7 @@ const Explorer = () => {
                                     <p>Links here</p>
                                 </div>
                             </div>
-                        </div>
+                        </SimpleBar>
                     </div>
                     <div className="bottom">
                         <a href="https://marketplace.visualstudio.com/items?itemName=UrosVujosevic.explorer-manager" target="_blank" rel="noreferrer">
