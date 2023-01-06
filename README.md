@@ -6,7 +6,7 @@
 
 <img width="70%" alt="Portfolio MockUp that looks like VSCode" src="https://user-images.githubusercontent.com/5871075/204670157-a0335eb6-9ee6-4f04-bc1c-e623a3c51aa7.png">
 
-[See full mockup here](https://www.figma.com/file/GqXYhDV2zVOPyfx5gRmOOh/P21563---HW-Portfolio?node-id=0%3A1&t=Kep3FCw2dpJ7BLso-1)
+[See full mockup here](https://www.figma.com/file/GqXYhDV2zVOPyfx5gRmOOh/P21563---HW-Portfolio?node-id=0%3A1&t=Kep3FCw2dpJ7BLso-1) or in repo issues.
 
 <h2>Screenshot</h2>
 
