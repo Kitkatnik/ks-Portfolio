@@ -19,7 +19,7 @@ const BrowserWindow = () => {
                 <span className="maximize-button"><VscCircleFilled /></span>
             </div>
             <div className="file-name">
-                [NAME OF PAGE HERE].jsx — katya-sarmiento
+                <a href="/">katya-sarmiento (Workspace)</a>
             </div>
             <div className="panel-options">
                 <span className="panel-icon"><RiLayoutLeftLine /></span>

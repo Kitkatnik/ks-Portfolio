@@ -80,7 +80,7 @@ const Explorer = () => {
                             <p>VS CODE PETS</p>
                         </div>
                         <div>
-                            <img src={vscodepets} />
+                            <img src={vscodepets} alt="Screenshot of a VSCodePets cat climbing in a forest"/>
                         </div>
                     </div>
                 </div>
