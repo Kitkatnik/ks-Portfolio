@@ -27,8 +27,8 @@ a {
     min-height: 0;
 }
 
-@media all and (max-width: 600px){
+/* @media all and (max-width: 600px){
     .app {
         flex-direction: column;
     }
-}
+} */

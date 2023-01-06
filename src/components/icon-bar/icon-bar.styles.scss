@@ -1,45 +1,40 @@
 .iconbar {
     background-color: #2B2B46;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     z-index: 100;
+    height: 100%;
+    flex-basis: 70px;
 
-    .icons{
-        font-size: 1.5em;
+    a:nth-child(1){
+        padding-top: 20%;
+    }
+
+    a{
+        font-size: 2em;
         width: 100%;
         text-align: center;
-        padding: 5px 0 0 0;
+        color: rgb(132, 132, 179);
+        padding: 10% 0%;
     }
-    .icons:hover{
-        background-color: #1D1D2E;
+    a:hover{
+        color: rgb(231, 231, 231);
     }
 }
 
-@media all and (min-width: 600px){
+@media all and (max-width: 600px){
     .iconbar {
-        flex-direction: column;
-        justify-content: flex-start;
-        height: 100%;
-        flex-basis: 55px;
+        flex-direction: row;
+        justify-content: space-around;
+        
 
         .icons {
             font-size: 1.6em;
             padding-bottom: 5px;
         }
 
-        .icons:nth-child(1){
-            padding-top: 20%;
-        }
+        
     }
 }
-
-// TODO: in mobile, only have a few default VSCode settings like remote, trust, main, lines, spaces, javascript, notifications
-
-// BUG: Fix the height of about in mobile
-
-// TODO: Create a hamburger menu for mobile (using explorer - replace the three dots)
-
-// TODO: Add breakpoint for bottom icon bar to show more icons as it gets bigger 
-

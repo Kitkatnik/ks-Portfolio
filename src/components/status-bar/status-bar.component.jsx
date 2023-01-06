@@ -29,7 +29,7 @@ const StatusBar = () => {
                     <span><VscWorkspaceTrusted /></span>
                 </div>
                 <div className="block">
-                    <a href="https://marketplace.visualstudio.com/publishers/eamodio" target="_blank" rel="noreferrer" className="extension">
+                    <a href="https://www.gitkraken.com/gitlens" target="_blank" rel="noreferrer" className="extension">
                         <span><VscSourceControl /></span>
                         <p>main*</p>
                     </a>
@@ -41,7 +41,7 @@ const StatusBar = () => {
                     </a>
                 </div>
                 <div className="block">
-                    <a href="https://github.com/jest-community/vscode-jest#installation" target="_blank" rel="noreferrer" className="extension">
+                    <a href="https://jestjs.io/" target="_blank" rel="noreferrer" className="extension">
                         <p>Jest-WS:</p>
                         <span><VscPass /></span>
                         <p className="status-align space">{date.getFullYear().toString().substring(0,2)}</p> 
@@ -70,7 +70,7 @@ const StatusBar = () => {
             </div>
             <div className="status-right">
                 <div className="block">
-                    <a href="https://code.visualstudio.com/docs/nodejs/reactjs-tutorial" target="_blank" rel="noreferrer" className="extension">
+                    <a href="https://reactjs.org/" target="_blank" rel="noreferrer" className="extension">
                         <span><VscSymbolNamespace /></span>
                         <p>JavaScript React</p>
                     </a>

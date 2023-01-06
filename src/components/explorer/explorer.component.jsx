@@ -21,16 +21,21 @@ const Explorer = () => {
                 </div>
                 <div className="files">
                     <div className="top">
-                        <div className="divider">
-                            <span><VscChevronRight /></span>
-                            <p>OPEN EDITORS</p>
-                        </div>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager" target="_blank" rel="noreferrer">
+                            <div className="divider">
+                                <span><VscChevronRight /></span>
+                                <p>
+                                    PROJECT MANAGER: FAVORITES 
+                                    {/* (#) */}
+                                </p>
+                            </div>
+                        </a>
                         <div className="divider shadow">
                             <span><VscChevronDown /></span>
                             <p>PORTFOLIO (WORKSPACE)</p>
                         </div>
                         <div className="links">
-                            <div className="folder home">
+                            <div className="folder home linkActive">
                                 <span className="red"><VscAccount /></span>
                                 <p>Home</p>
                             </div>
@@ -59,29 +64,79 @@ const Explorer = () => {
                                     <span className="blue"><VscCode /></span>
                                     <p>Links here</p>
                                 </div>
+                                <div className="folder">
+                                    <span className="blue"><VscCode /></span>
+                                    <p>Links here</p>
+                                </div>
+                                <div className="folder">
+                                    <span className="blue"><VscCode /></span>
+                                    <p>Links here</p>
+                                </div>
+                                <div className="folder">
+                                    <span className="blue"><VscCode /></span>
+                                    <p>Links here</p>
+                                </div>
+                                <div className="folder">
+                                    <span className="blue"><VscCode /></span>
+                                    <p>Links here</p>
+                                </div>
+                                <div className="folder">
+                                    <span className="blue"><VscCode /></span>
+                                    <p>Links here</p>
+                                </div>
+                                <div className="folder">
+                                    <span className="blue"><VscCode /></span>
+                                    <p>Links here</p>
+                                </div>
+                                <div className="folder">
+                                    <span className="blue"><VscCode /></span>
+                                    <p>Links here</p>
+                                </div>
+                                <div className="folder">
+                                    <span className="blue"><VscCode /></span>
+                                    <p>Links here</p>
+                                </div>
+                                <div className="folder">
+                                    <span className="blue"><VscCode /></span>
+                                    <p>Links here</p>
+                                </div>
+                                <div className="folder">
+                                    <span className="blue"><VscCode /></span>
+                                    <p>Links here</p>
+                                </div>
+                                <div className="folder">
+                                    <span className="blue"><VscCode /></span>
+                                    <p>Links here</p>
+                                </div>
+                                <div className="folder">
+                                    <span className="blue"><VscCode /></span>
+                                    <p>Links here</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div className="bottom">
-                        <div className="divider">
-                            <span><VscChevronRight /></span>
-                            <p>OUTLINE</p>
-                        </div>
-                        <div className="divider">
-                            <span><VscChevronRight /></span>
-                            <p>TIMELINE</p>
-                        </div>
-                        <div className="divider">
-                            <span><VscChevronRight /></span>
-                            <p>NPM SCRIPTS</p>
-                        </div>
-                        <div className="divider">
-                            <span><VscChevronDown /></span>
-                            <p>VS CODE PETS</p>
-                        </div>
-                        <div>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=UrosVujosevic.explorer-manager" target="_blank" rel="noreferrer">
+                            <div className="divider">
+                                <span><VscChevronRight /></span>
+                                <p>BOOKMARKS: EXPLORER</p>
+                            </div>
+                        </a>
+                        <a href="https://yarnpkg.com/" target="_blank" rel="noreferrer">
+                            <div className="divider">
+                                <span><VscChevronRight /></span>
+                                <p>YARN</p>
+                            </div>
+                        </a>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets" target="_blank" rel="noreferred">
+                            <div className="divider">
+                                <span><VscChevronDown /></span>
+                                <p>VS CODE PETS</p>
+                            </div>
+                        </a>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets" target="_blank" rel="noreferred">
                             <img src={vscodepets} alt="Screenshot of a VSCodePets cat climbing in a forest"/>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
