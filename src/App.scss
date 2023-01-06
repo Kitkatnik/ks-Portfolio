@@ -27,6 +27,32 @@ a {
     min-height: 0;
 }
 
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+        width:  $size;
+        height: $size;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $foreground-color;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $background-color;
+    }
+
+    // For Internet Explorer
+    & {
+        scrollbar-face-color: $foreground-color;
+        scrollbar-track-color: $background-color;
+    }
+}
+
+body{
+    @include scrollbars(.5em, rgba(139, 139, 191, 0.1));
+}
+
 /* @media all and (max-width: 600px){
     .app {
         flex-direction: column;

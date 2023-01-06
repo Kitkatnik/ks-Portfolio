@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 
 // import { requestRepos } from './utils/github/github.utils';
 import { inject } from '@vercel/analytics';

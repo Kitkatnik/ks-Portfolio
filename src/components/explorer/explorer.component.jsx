@@ -128,13 +128,13 @@ const Explorer = () => {
                                 <p>YARN</p>
                             </div>
                         </a>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets" target="_blank" rel="noreferred">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets" target="_blank" rel="noreferrer">
                             <div className="divider">
                                 <span><VscChevronDown /></span>
                                 <p>VS CODE PETS</p>
                             </div>
                         </a>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets" target="_blank" rel="noreferred">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets" target="_blank" rel="noreferrer">
                             <img src={vscodepets} alt="Screenshot of a VSCodePets cat climbing in a forest"/>
                         </a>
                     </div>
