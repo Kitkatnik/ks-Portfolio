@@ -64,12 +64,20 @@
                 z-index:2;
             }
 
-            .links{
+            .links{ 
                 z-index:1;
                 overflow-y: scroll;
+                overflow-x:hidden;
                 min-width: 0;
                 min-height: 0;
                 font-size: 1em;
+
+                .simplebar-scrollbar::before{
+                    background-color: rgba(114, 114, 172,0.25);
+                    border-radius: 0;
+                    width: 1em;
+                    padding: 0;
+                }
 
                 .home{
                     margin-top: 1%;
@@ -81,6 +89,11 @@
                     justify-items: center;
                     padding: 2% 8%;
                     line-height: 0; 
+
+                    p{
+                        line-height: normal !important;
+                        margin-right: -1000px !important;
+                    }
 
                     .yellow{
                         color: #fbc02d;
