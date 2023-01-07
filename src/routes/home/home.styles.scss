@@ -1,0 +1,67 @@
+.about-container{
+    background-color: #1D1D2E;
+    width: 100%;
+    z-index:100;
+    padding: 1% 2%;
+    font-size: 0.9em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    font-size: 1em;
+
+    .simplebar-scrollbar::before{
+        background-color: rgba(114, 114, 172,0.5);
+        border-radius: 0;
+        width: 1em;
+        padding: 0;
+    }
+}
+.back-symbols{
+    text-overflow: "=";
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.dots{
+    color: #67678D;
+    font-size: 0.9em;
+}
+
+.code{
+    color: #ed736c;
+}
+
+.link{
+    color: #4f9fdf;
+}
+
+.variable{
+    color: orange;
+    font-style: italic;
+}
+
+.identifier{
+    color: #69BE7D;
+}
+.highlight{
+    color: white;
+    background-color: #527c93;
+}
+
+.comment{
+    color: #A676E0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.style{
+    color: #E3DE80;
+}
+
+.nested{
+    padding: 0 2%;
+}
+
+.active-line {
+    
+}

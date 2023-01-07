@@ -6,7 +6,7 @@ import { inject } from '@vercel/analytics';
 import BrowserWindow from './components/browser-window/browser-window.component';
 import IconBar from './components/icon-bar/icon-bar.component';
 import Explorer from './components/explorer/explorer.component';
-import About from './routes/about/about.component';
+import Home from './routes/home/home.component';
 import StatusBar from './components/status-bar/status-bar.component';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
       <div className="app">
         <IconBar />
         <Explorer />
-        <About />
+        <Home />
       </div>
       <StatusBar />
     </div>
