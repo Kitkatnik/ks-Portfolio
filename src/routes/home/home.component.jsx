@@ -19,7 +19,7 @@ const Home = (test) => {
 
     return (
         <SimpleBar className="about-container">
-            <p className="comment">// HI, I'M KATYA SARMIENTO</p><br />
+            <p className="comment intro">// HI, I'M KATYA SARMIENTO</p><br />
             <p>
                 <span className="code">import</span> <span className="style">'./professional.styles.scss'</span>;
             </p>
@@ -95,22 +95,25 @@ const Home = (test) => {
                 <div className="nested">
                     <div className="about-activities-container">
                         <div className="about-activities-left">
-                            <h1 className="comment">{charCode(codes.forwardSlash)}* ABOUT *{charCode(codes.forwardSlash)}</h1>
+                            <h1 className="comment">{charCode(codes.leftBrace)}{charCode(codes.forwardSlash)}* ABOUT *{charCode(codes.forwardSlash)}{charCode(codes.rightBrace)}</h1>
                             <br/>
                             <p>
                                 Driven Full-Stack Engineer with a strong bias for impact, proficient in using Javascript for frontend and backend programming, React, HTML, CSS, API implementing, Node.JS, Express, SQL, PostgreSQL, and frameworks like Bootstrap and Material UI. Experience as a Founder and Director of Operations provides an advantage in driving key initiatives, maximizing impact, innovating and iterating, working autonomously, acting fast, and being flexible in facilitating critical change for high-growth, multi-million-dollar B2B companies. 
                             </p>
                         </div>
                         <div className="about-activities">
-                            <h1 className="comment">{charCode(codes.forwardSlash)}* ACTIVITIES *{charCode(codes.forwardSlash)}</h1><br/>
-                            <p><span className="background dots">. . . .</span> List awards and hackathons here</p>
+                            <h1 className="comment">{charCode(codes.leftBrace)}{charCode(codes.forwardSlash)}* ACTIVITIES *{charCode(codes.forwardSlash)}{charCode(codes.rightBrace)}</h1><br/>
+                            <p><span className="background dots">. . .</span> <span className="link"><a href="https://github.com/Kitkatnik/ks-adventofcode-2022" target="_blank" rel="noreferrer">Advent of Code 2022</a></span></p>
+                            <p><span className="background dots">. . .</span> <span className="link"><a href="https://passport.zerotomastery.io/user/902912ad9c2793d791403d1f9e482f22" target="_blank" rel="noreferrer">Zero to Mastery Passport</a></span></p>
+                            <p><span className="background dots">. . .</span> <span className="link"><a href="https://www.holopin.io/@kitkatnik" target="_blank" rel="noreferrer">Hacktoberfest 2022</a></span></p>
+                            <p><span className="background dots">. . .</span> <span className="link"><a href="http://www.eventbrite.com/e/att-aspire-mobile-app-hackathon-miami-education-tickets-8736279447" target="_blank" rel="noreferrer">AT&T Aspire Mobile App Hackathon</a></span></p>
                         </div>
 
                     </div>
 
                     <br/><br/>
 
-                    <h1 className="comment">{charCode(codes.forwardSlash)}* SKILLS *{charCode(codes.forwardSlash)}</h1><br/>
+                    <h1 className="comment">{charCode(codes.leftBrace)}{charCode(codes.forwardSlash)}* SKILLS *{charCode(codes.forwardSlash)}{charCode(codes.rightBrace)}</h1><br/>
                     <p>{charCode(codes.leftBrace)}</p>
                     <br/>
                     <div className="nested">
@@ -147,7 +150,7 @@ const Home = (test) => {
                         <p>
                             <span className="code">additionalSkills</span>: {charCode(codes.leftBracket)} 
                             <br/>
-                            <div className="nested">Project and product management, process documentation, system conversions and integrations, cross-functional collaboration, product-led growth, product analytics, user feedback collection and analysis, design systems, UI and UX design, roadmap planning, customer and community support, and open source contributions.</div>
+                            <div className="nested">Project and Product Management, Process Documentation, System Conversions and Integrations, Cross-functional Collaboration, Product-led Growth, Product Analytics, User Feedback Collection and Analysis, Design Systems, UI and UX Design, Roadmap Planning, Customer and Community Support, and Open Source Contributions.</div>
                             {charCode(codes.rightBracket)};<br/>
                         </p>
 
