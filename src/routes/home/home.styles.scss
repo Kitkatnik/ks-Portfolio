@@ -41,6 +41,8 @@
         padding: 1% 1% 0.5% ;
         margin: 5px 0 0 70px;
         font-size: 0.5em;
+        text-align: center;
+        z-index: 1;
 
         .img-popup{
             width: 146px;
@@ -48,11 +50,45 @@
             padding-top: 10px;
         }
     }
+    .position-container{
+        position: relative;
+
+        .background-container{
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            .background-text-container{
+                display: flex;
+                flex-wrap: nowrap;
+                padding: 2.5% 0;
+
+                .left{
+                    min-width: 285px;
+                    width: 10%;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
 
     .back-symbols{
         text-overflow: "=";
         white-space: nowrap;
         overflow: hidden;
+        margin-right: -1000%;
+    }
+
+    .about-activities-container{
+        display: flex;
+    }
+
+    .about-activities-left{
+        width: 70%;
+        padding-right: 5%;
     }
     
     .dots{
