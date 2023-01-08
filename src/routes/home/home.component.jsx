@@ -11,14 +11,10 @@ const Home = (test) => {
         greaterThan: 62,
         lessThan: 60,
         forwardSlash: 47,
-        tab: '\u0009',
         leftBracket: 91,
         rightBracket: 93,
     }
     const charCode = (code) => { return String.fromCharCode(code) }
-    const tab = `${charCode(codes.tab)}${charCode(codes.tab)}`;
-
-        // TODO: look up here
 
     return (
         <SimpleBar className="about-container">
@@ -26,7 +22,7 @@ const Home = (test) => {
                 <span className="code">import</span> <span className="style">'./professional.styles.scss'</span>;
             </p>
             <p className="active-line">
-                <span className="code">import</span> <mark className="highlight">myPortrait</mark> <span className="code">from</span> <span className="style">'../../assets/myPortrait.jpg'</span>;
+                <span className="code">import</span> <mark className="highlight">myPortrait</mark> <span className="code">from</span> <span className="style">'../../assets/myPortrait.jpg'</span>;<span className="blinking-cursor">|</span>
             </p>
             
             <br/>

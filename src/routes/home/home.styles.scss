@@ -15,53 +15,67 @@
         width: 1em;
         padding: 0;
     }
-}
-.back-symbols{
-    text-overflow: "=";
-    white-space: nowrap;
-    overflow: hidden;
-}
 
-.dots{
-    color: #67678D;
-    font-size: 0.9em;
-}
+    .active-line{
+        background-color: #273651;
+        border: 2px solid #374860;
+        width: 110%;
+    }
 
-.code{
-    color: #ed736c;
-}
+    @keyframes blink {
+        0% {opacity: 0}
+        49%{opacity: 0}
+        50% {opacity: 1}
+    }
+    
+    .blinking-cursor{
+        animation: blink 1s infinite;
+    }
 
-.link{
-    color: #4f9fdf;
-}
-
-.variable{
-    color: orange;
-    font-style: italic;
-}
-
-.identifier{
-    color: #69BE7D;
-}
-.highlight{
-    color: white;
-    background-color: #527c93;
-}
-
-.comment{
-    color: #A676E0;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-.style{
-    color: #E3DE80;
-}
-
-.nested{
-    padding: 0 2%;
-}
-
-.active-line {
+    .back-symbols{
+        text-overflow: "=";
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .dots{
+        color: #67678D;
+        font-size: 0.9em;
+    }
+    
+    .code{
+        color: #ed736c;
+    }
+    
+    .link{
+        color: #4f9fdf;
+    }
+    
+    .variable{
+        color: orange;
+        font-style: italic;
+    }
+    
+    .identifier{
+        color: #69BE7D;
+    }
+    .highlight{
+        color: white;
+        background-color: #527c93;
+    }
+    
+    .comment{
+        color: #A676E0;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    
+    .style{
+        color: #E3DE80;
+    }
+    
+    .nested{
+        padding: 0 2%;
+    }
     
 }
