@@ -22,15 +22,17 @@ const Home = (test) => {
                 <span className="code">import</span> <span className="style">'./professional.styles.scss'</span>;
             </p>
             <p className="active-line">
-                <span className="code">import</span> <mark className="highlight">myPortrait</mark> <span className="code">from</span> <span className="style">'../../assets/myPortrait.jpg'</span>;<span className="blinking-cursor">|</span>
+                <span className="code">import</span> <mark className="highlight">myPortrait</mark><span className="blinking-cursor">|</span><span className="code">from</span> <span className="style">'../../assets/myPortrait.jpg'</span>;
             </p>
-            
-            <br/>
-
-            <div>
-                (alias) const myPortrait: string<br/>import myPortrait
+            <div className="code-popup">
+                <p>
+                    (alias) <span className="code">const</span> myPortrait<span className="code">:</span> <const className="type">string</const>
+                </p>
+                <p>
+                    <span className="code">import</span> myPortrait
+                </p>
+                <img src={KatyaHeadshot} alt="Headshot" className="img-popup" />
             </div>
-            <img src="" alt="Headshot" />
 
             <p>
                 <span className="code">

@@ -32,6 +32,23 @@
         animation: blink 1s infinite;
     }
 
+        
+    .code-popup{
+        background-color:#1d1d2e;
+        border: 1px solid #495374;
+        color: #fff;
+        width: fit-content;
+        padding: 1% 1% 0.5% ;
+        margin: 5px 0 0 70px;
+        font-size: 0.5em;
+
+        .img-popup{
+            width: 146px;
+            border-radius: 100%;
+            padding-top: 10px;
+        }
+    }
+
     .back-symbols{
         text-overflow: "=";
         white-space: nowrap;
@@ -50,7 +67,10 @@
     .link{
         color: #4f9fdf;
     }
-    
+    .type{
+        color: #86e1f5;
+        font-style: italic;
+    }
     .variable{
         color: orange;
         font-style: italic;
