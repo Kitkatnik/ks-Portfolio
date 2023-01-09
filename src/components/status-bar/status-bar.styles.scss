@@ -1,6 +1,5 @@
 .status-bar{
     background-color: #151523;
-    // border-top: 1px solid #1a1a2a;
     border-radius: 0 0 10px 10px;
     font-family: -apple-system,BlinkMacSystemFont,sans-serif;
     font-weight: 300;
@@ -9,13 +8,6 @@
     justify-content: space-between;
     align-items: center;
     margin: 0;
-
-    // span{
-    //     display: inline-block;
-    //     line-height: 0;
-    //     vertical-align: center;
-    //     text-align: center;
-    // }
 
     .status-left{
         display: flex;
@@ -48,38 +40,8 @@
     }
 }
 
-// .status-bar{
-//     display: flex;
-    
-//     a {
-//         cursor: pointer;
-//     }
-
-//     .status-left{
-//         flex-grow: 1;
-
-//         .status{
-//             padding-right: 15px; 
-
-//             .space {
-//                 padding-right: 5px;
-//             }
-//         }
-//     }
-
-//     .status-align{
-//         vertical-align: 11%;
-//     }
-
-//     .status-right{
-//         flex-grow: 1;
-//         text-align: right;
-
-//         .status {
-//             padding-left: 15px;
-//         }
-//         .space {
-//             padding-left: 5px;
-//         }
-//     }
-// }
+@media (max-width: 1200px){
+    .status-bar{
+        display: none;
+    }
+}

@@ -3,6 +3,7 @@ import {
     VscCallOutgoing, 
     VscMail, 
     VscGithub,
+    VscMenu
 } from 'react-icons/vsc';
 import { 
     SiLinkedin, 
@@ -26,6 +27,9 @@ const IconBar = () => {
                 </a>
                 <a href="https://www.polywork.com/kitkatnik" target="_blank" rel="noreferrer">
                     <span className="si"><SiPolywork /></span>
+                </a>
+                <a href="" target="_blank" rel="noreferrer" className="menu">
+                    <span className="si"><VscMenu /></span>
                 </a>
             </div>
     )

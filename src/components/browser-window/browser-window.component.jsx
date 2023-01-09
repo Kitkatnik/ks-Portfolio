@@ -2,6 +2,14 @@ import './browser-window.styles.scss';
 
 import { 
     VscCircleFilled,
+    VscEllipsis,
+    VscChevronRight,
+    VscChevronDown,
+    VscAccount, 
+    VscFolderOpened, 
+    VscBriefcase, 
+    VscPulse,
+    VscCode
 } from 'react-icons/vsc';
 import {
     RiLayoutLeftLine,
@@ -22,6 +30,32 @@ const BrowserWindow = () => {
                 <a href="/">
                     {/* [NAME OF PAGE HERE].jsx —  */}
                     katya-sarmiento-portfolio</a>
+            </div>
+            <div className="file-name-menu">
+                <a href="/">
+                    <div className="browser-menu">
+                        <span className="red"><VscAccount /></span>
+                        <p>Home</p>
+                    </div> 
+                </a>
+                <a href="/">
+                    <div className="browser-menu">
+                        <span className="yellow"><VscBriefcase /></span>
+                        <p>Resume</p>
+                    </div>
+                </a>
+                {/* <a href="/">
+                    <div className="browser-menu">
+                        <span className="stats purple"><VscPulse /></span>
+                        <p>Stats</p>
+                    </div>
+                </a> */}
+                <a href="/">
+                    <div className="browser-menu">
+                        <span className="green"><VscFolderOpened /></span>
+                        <p>Projects</p>
+                    </div>
+                </a>
             </div>
             <div className="panel-options">
                 <span className="panel-icon"><RiLayoutLeftLine /></span>

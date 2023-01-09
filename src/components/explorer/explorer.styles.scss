@@ -3,7 +3,7 @@
     font-family: -apple-system,BlinkMacSystemFont,sans-serif;
     font-weight: 300;
     min-width: 200px;
-    max-width: 300px;
+    max-width: 250px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -170,5 +170,11 @@
                 width: 100%;
             }
         }
+    }
+}
+
+@media (max-width: 992px){
+    .explorer{
+        display:none;
     }
 }

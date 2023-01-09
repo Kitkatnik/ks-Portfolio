@@ -51,7 +51,7 @@ const Home = (test) => {
                             <span className="code">
                                 const
                             </span> <span className="variable">
-                                currently
+                                current
                             </span> = (<span className="variable">
                                 job
                             </span>) ={charCode(codes.greaterThan)} {charCode(codes.leftBrace)} return <span className="style">

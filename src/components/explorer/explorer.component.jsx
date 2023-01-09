@@ -42,14 +42,14 @@ const Explorer = () => {
                                 <span className="red"><VscAccount /></span>
                                 <p>Home</p>
                             </div>
-                            <div className="folder">
+                            {/* <div className="folder">
                                 <span className="yellow"><VscBriefcase /></span>
                                 <p>Resume</p>
                             </div>
                             <div className="folder stats">
                                 <span className="stats purple"><VscPulse /></span>
                                 <p>Stats</p>
-                            </div>
+                            </div> */}
                             <div className="folder">
                                 <span className="green"><VscFolderOpened /></span>
                                 <p>Projects</p>

@@ -12,6 +12,10 @@
         padding-top: 20%;
     }
 
+    .menu{
+        display: none;
+    }
+
     a{
         font-size: 2em;
         width: 100%;
@@ -24,17 +28,17 @@
     }
 }
 
-@media all and (max-width: 600px){
-    .iconbar {
-        flex-direction: row;
-        justify-content: space-around;
+// @media all and (max-width: 600px){
+//     .iconbar {
+//         flex-direction: row;
+//         justify-content: space-around;
         
 
-        .icons {
-            font-size: 1.6em;
-            padding-bottom: 5px;
-        }
+//         .icons {
+//             font-size: 1.6em;
+//             padding-bottom: 5px;
+//         }
 
         
-    }
-}
+//     }
+// }
