@@ -8,7 +8,7 @@
     height: 100%;
     flex-basis: 70px;
 
-    a:nth-child(1){
+    .first{
         padding-top: 20%;
     }
 
@@ -28,17 +28,17 @@
     }
 }
 
-// @media all and (max-width: 600px){
-//     .iconbar {
-//         flex-direction: row;
-//         justify-content: space-around;
-        
+@media (max-width: 768px){
+    .menu{
+        display: initial !important;
+        color: rgb(231, 231, 231) !important;
+    }
 
-//         .icons {
-//             font-size: 1.6em;
-//             padding-bottom: 5px;
-//         }
+    .iconbar {
+        flex-direction: row;
 
-        
-//     }
-// }
+        a{
+            padding: 1% 0 0 0 !important;
+        }
+    }
+}

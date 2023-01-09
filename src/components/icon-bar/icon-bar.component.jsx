@@ -13,7 +13,7 @@ import {
 const IconBar = () => {
     return (
             <div className='iconbar'>
-                <a href="tel:3058909834" target="_blank" rel="noreferrer">
+                <a href="tel:3058909834" target="_blank" rel="noreferrer" className="first">
                     <span><VscCallOutgoing /></span>
                 </a>
                 <a href="mailto:katya@btsbusiness.com?subject=Portfolio%20Contact&body=Write%20your%20message%20here%20%3A)" target="_blank" rel="noreferrer">

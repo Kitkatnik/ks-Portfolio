@@ -39,7 +39,7 @@
         color: #fff;
         width: fit-content;
         padding: 1% 1% 0.5% ;
-        margin: 5px 0 0 70px;
+        margin: 5px 0 5px 70px;
         font-size: 0.5em;
         text-align: center;
         z-index: 1;
@@ -140,4 +140,79 @@
         padding: 0 0 0 2%;
     }
     
+}
+
+@media (max-width: 768px){
+    .about-container{
+        // font-size: 0.9em;
+
+        .position-container{
+            display: flex !important;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .code-popup{
+                margin: 5px 0;
+                display: inline-block;
+                margin-right: 5%;
+
+                .portrait-message{ display: none; }
+            }
+    
+            .background-container{
+                position: static !important;
+                right: 0;
+                top: auto !important;
+                left: auto !important;
+                
+                .background-text-container{
+                    padding: 0 !important;
+                    height: 100%;
+                    
+                    .background-text{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        height: 100%;
+                    }
+                }
+
+                .code-message{
+                    padding-bottom: 2%;
+                }
+            }
+        }
+
+        .back-symbols, .left{
+                display: none !important;
+        }
+
+        .about-activities-container{
+            flex-direction: column;
+
+            .about-activities-left{
+                width: 100%;
+                padding-bottom: 7%;
+            }
+        }
+
+        .skills{
+            padding-right: 5%;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .about-container{
+        // font-size: 0.8em;
+
+        .position-container{
+            display: flex !important;
+            flex-direction: column !important;
+    
+            .code-popup{
+                margin: 5px 0 5px 70px !important;
+            }
+        }
+    }
 }
