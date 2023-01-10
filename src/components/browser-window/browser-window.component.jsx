@@ -2,14 +2,10 @@ import './browser-window.styles.scss';
 
 import { 
     VscCircleFilled,
-    VscEllipsis,
-    VscChevronRight,
-    VscChevronDown,
     VscAccount, 
     VscFolderOpened, 
     VscBriefcase, 
     VscPulse,
-    VscCode
 } from 'react-icons/vsc';
 import {
     RiLayoutLeftLine,
@@ -38,12 +34,12 @@ const BrowserWindow = () => {
                         <p>Home</p>
                     </div> 
                 </a>
-                <a href="/">
+                {/* <a href="/">
                     <div className="browser-menu">
                         <span className="yellow"><VscBriefcase /></span>
                         <p>Resume</p>
                     </div>
-                </a>
+                </a> */}
                 {/* <a href="/">
                     <div className="browser-menu">
                         <span className="stats purple"><VscPulse /></span>

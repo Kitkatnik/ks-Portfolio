@@ -10,8 +10,10 @@ import Home from './routes/home/home.component';
 import StatusBar from './components/status-bar/status-bar.component';
 
 function App() {
+  // VERCEL ANALYTICS
   inject();
 
+  // GITHUB INTEGRATION
   // const reposList = requestRepos()
   //   .then( response => response.json())
   //   .then( data => data)

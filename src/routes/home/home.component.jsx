@@ -23,7 +23,7 @@ const Home = (test) => {
             <p>
                 <span className="code">import</span> <span className="style">'./professional.styles.scss'</span>;
             </p>
-            <p className="active-line">
+            <p>
                 <span className="code">import</span> pronouns <span className="code">from</span> <span className="style">'../../she/they'</span>;
             </p>
             <p className="active-line">
