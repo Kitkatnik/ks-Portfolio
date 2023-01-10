@@ -23,7 +23,7 @@ const Home = (test) => {
             <p>
                 <span className="code">import</span> <span className="style">'./professional.styles.scss'</span>;
             </p>
-            <p className="active-line">
+            <p>
                 <span className="code">import</span> pronouns <span className="code">from</span> <span className="style">'../../she/they'</span>;
             </p>
             <p className="active-line">
@@ -32,10 +32,10 @@ const Home = (test) => {
             <div className="position-container">
 
                 <div className="code-popup">
-                    <p>
+                    <p className="portrait-message">
                         (alias) <span className="code">const</span> myPortrait<span className="code">:</span> <const className="type">string</const>
                     </p>
-                    <p>
+                    <p className="portrait-message">
                         <span className="code">import</span> myPortrait
                     </p>
                     <img src={KatyaHeadshot} alt="Headshot" className="img-popup" />
@@ -47,24 +47,24 @@ const Home = (test) => {
                             <div className="back-symbols dots">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
                         </div>
                         <div className="background-text">
-                        <p>
-                            <span className="code">
-                                const
-                            </span> <span className="variable">
-                                currently
-                            </span> = (<span className="variable">
-                                job
-                            </span>) ={charCode(codes.greaterThan)} {charCode(codes.leftBrace)} return <span className="style">
-                                'Searching for Software Engineer / Full-Stack Developer roles'
-                            </span> {charCode(codes.rightBrace)};
-                        </p>
-                        <p>
-                            <span className="code">
-                                const
-                            </span> <span className="variable">
-                                location
-                            </span> = {charCode(codes.leftBracket)} <span className="style">'Atlanta, GA'</span>, <span className="style">'Willing to work remotely'</span> {charCode(codes.rightBracket)};
-                        </p>
+                            <p className="code-message">
+                                <span className="code">
+                                    const
+                                </span> <span className="variable">
+                                    current
+                                </span> = (<span className="variable">
+                                    job
+                                </span>) ={charCode(codes.greaterThan)} {charCode(codes.leftBrace)} return <span className="style">
+                                    'Searching for Software Engineer / Full-Stack Developer roles'
+                                </span> {charCode(codes.rightBrace)};
+                            </p>
+                            <p className="code-message">
+                                <span className="code">
+                                    const
+                                </span> <span className="variable">
+                                    location
+                                </span> = {charCode(codes.leftBracket)} <span className="style">'Atlanta, GA'</span>, <span className="style">'Willing to work remotely'</span> {charCode(codes.rightBracket)};
+                            </p>
                         </div>
                     </div>
                     <div className="back-symbols">
@@ -116,7 +116,7 @@ const Home = (test) => {
                     <h1 className="comment">{charCode(codes.leftBrace)}{charCode(codes.forwardSlash)}* SKILLS *{charCode(codes.forwardSlash)}{charCode(codes.rightBrace)}</h1><br/>
                     <p>{charCode(codes.leftBrace)}</p>
                     <br/>
-                    <div className="nested">
+                    <div className="nested skills">
                         <p>
                             <span className="code">frontend</span>: {charCode(codes.leftBracket)} 
                             <br/>

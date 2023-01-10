@@ -12,7 +12,6 @@ import {
     VscCheckAll,
     VscFeedback,
     VscBell,
-    VscFlame
 } from 'react-icons/vsc';
 
 import { IoHeadsetSharp } from 'react-icons/io5';
@@ -59,12 +58,6 @@ const StatusBar = () => {
                 <div className="block">
                     <a href="https://marketplace.visualstudio.com/items?itemName=WallabyJs.wallaby-vscode" target="_blank" rel="noreferrer" className="extension">
                         <p>Wallaby</p>
-                    </a>
-                </div>
-                <div className="block">
-                    <a href="https://marketplace.visualstudio.com/publishers/stateful" target="_blank" rel="noreferrer" className="extension">
-                        <span><VscFlame /></span>
-                        <p>{date.getDate()}</p>
                     </a>
                 </div>
             </div>
