@@ -90,10 +90,9 @@
                     justify-items: center;
                     padding: 2% 8%;
                     line-height: 0; 
-
+                    
                     p{
                         line-height: normal !important;
-                        margin-right: -1000px !important;
                     }
 
                     .yellow{
@@ -137,9 +136,22 @@
                 }
 
                 .projects{
-                    line-height: 0;
+                    
+                    .folder{
+                        
+                        p{
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+
                     span{
                         padding-left: 10%;
+                    }
+
+                    p {
+                        text-overflow: ellipsis;
                     }
                 }
             }
