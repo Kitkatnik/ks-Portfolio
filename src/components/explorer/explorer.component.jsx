@@ -57,7 +57,7 @@ const Explorer = () => {
                             <div className="projects">
                                 <div className="folder">
                                     <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
+                                    <p>This link is too long to fit in the explorer without messing everything up</p>
                                 </div>
                                 <div className="folder">
                                     <span className="blue"><VscCode /></span>
