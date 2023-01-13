@@ -1,4 +1,5 @@
 import { useState, Fragment } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './icon-bar.styles.scss'
 import { 
@@ -42,10 +43,34 @@ const IconBar = () => {
                 </div>
                 <div className="icon-bar-navigation">
                     <div className={popup ? 'show-menu' : 'hide-menu'}>
-                        <a href="/">/* HOME */</a>
-                        <a href="/">/* RESUME */</a>
-                        <a href="/">/* STATS */</a>
-                        <a href="/">/* PROJECTS */</a>
+                        <NavLink to="/">
+                            {({ isActive }) => (
+                                <p className={isActive ? 'linkActive' : undefined}>
+                                    /* HOME */
+                                </p>
+                            )}
+                        </NavLink> 
+                        <NavLink to="/resume">
+                            {({ isActive }) => (
+                                <p className={isActive ? 'linkActive' : undefined}>
+                                    /* RESUME */
+                                </p>
+                            )}
+                        </NavLink>
+                        <NavLink to="/stats">
+                            {({ isActive }) => (
+                                <p className={isActive ? 'linkActive' : undefined}>
+                                    /* STATS */
+                                </p>
+                            )}
+                        </NavLink>
+                        <NavLink to="/projects">
+                        {({ isActive }) => (
+                                <p className={isActive ? 'linkActive' : undefined}>
+                                    /* PROJECTS */
+                                </p>
+                            )}
+                        </NavLink>
                     </div>
 
                 </div>

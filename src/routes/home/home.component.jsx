@@ -1,7 +1,6 @@
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 
-
 import './home.styles.scss';
 import KatyaHeadshot from '../../assets/KatyaHeadshot.jpg';
 
