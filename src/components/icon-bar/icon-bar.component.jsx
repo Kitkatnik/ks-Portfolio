@@ -67,7 +67,7 @@ const IconBar = () => {
                         <NavLink to="/projects">
                         {({ isActive }) => (
                                 <p className={isActive ? 'linkActive' : undefined}>
-                                    /* STATS */
+                                    /* PROJECTS */
                                 </p>
                             )}
                         </NavLink>
