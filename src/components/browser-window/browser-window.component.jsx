@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import './browser-window.styles.scss';
 
 import { 
@@ -28,30 +30,38 @@ const BrowserWindow = () => {
                     katya-sarmiento-portfolio</a>
             </div>
             <div className="file-name-menu">
-                <a href="/">
-                    <div className="browser-menu">
-                        <span className="red"><VscAccount /></span>
-                        <p>Home</p>
-                    </div> 
-                </a>
-                {/* <a href="/">
-                    <div className="browser-menu">
-                        <span className="yellow"><VscBriefcase /></span>
-                        <p>Resume</p>
-                    </div>
-                </a> */}
-                {/* <a href="/">
-                    <div className="browser-menu">
-                        <span className="stats purple"><VscPulse /></span>
-                        <p>Stats</p>
-                    </div>
-                </a> */}
-                <a href="/">
-                    <div className="browser-menu">
-                        <span className="green"><VscFolderOpened /></span>
-                        <p>Projects</p>
-                    </div>
-                </a>
+                <NavLink to='/'>
+                    {({ isActive }) => (
+                        <div className='browser-menu'>
+                            <span className="red"><VscAccount /></span>
+                            <p className={isActive ? 'linkActive' : undefined}>Home</p>
+                        </div> 
+                    )}
+                </NavLink>
+                <NavLink to="/resume">
+                    {({ isActive }) => (
+                        <div className='browser-menu'>
+                            <span className="yellow"><VscBriefcase /></span>
+                            <p className={isActive ? 'linkActive' : undefined}>Resume</p>
+                        </div>
+                    )}
+                </NavLink>
+                <NavLink to="/stats">
+                    {({ isActive }) => (
+                        <div className='browser-menu'>
+                            <span className="stats purple"><VscPulse /></span>
+                            <p className={isActive ? 'linkActive' : undefined}>Stats</p>
+                        </div>
+                    )}
+                </NavLink>
+                <NavLink to="/projects">
+                    {({ isActive }) => (
+                        <div className='browser-menu'>
+                            <span className="green"><VscFolderOpened /></span>
+                            <p className={isActive ? 'linkActive' : undefined}>Projects</p>
+                        </div>
+                    )}
+                </NavLink>
             </div>
             <div className="panel-options">
                 <span className="panel-icon"><RiLayoutLeftLine /></span>

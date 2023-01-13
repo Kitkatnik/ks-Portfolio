@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 
@@ -16,6 +18,7 @@ import {
 } from 'react-icons/vsc';
 
 const Explorer = () => {
+
     return (
             <div className="explorer">
                 <div className="header">
@@ -38,22 +41,38 @@ const Explorer = () => {
                             <p>PORTFOLIO (WORKSPACE)</p>
                         </div>
                         <SimpleBar className="links">
-                            <div className="folder home linkActive">
-                                <span className="red"><VscAccount /></span>
-                                <p>Home</p>
-                            </div>
-                            {/* <div className="folder">
-                                <span className="yellow"><VscBriefcase /></span>
-                                <p>Resume</p>
-                            </div>
-                            <div className="folder stats">
-                                <span className="stats purple"><VscPulse /></span>
-                                <p>Stats</p>
-                            </div> */}
-                            <div className="folder">
-                                <span className="green"><VscFolderOpened /></span>
-                                <p>Projects</p>
-                            </div>
+                            <NavLink to='/'>
+                                { ({ isActive }) => (
+                                    <div className={isActive ? 'folder home linkActive' : 'folder home'}>
+                                        <span className="red"><VscAccount /></span>
+                                        <p>Home</p>
+                                    </div>
+                                )}
+                            </NavLink>
+                            <NavLink to='resume'>
+                                {({ isActive }) => (
+                                    <div className={isActive ? 'folder linkActive' : 'folder'}>
+                                        <span className="yellow"><VscBriefcase /></span>
+                                        <p>Resume</p>
+                                    </div>
+                                )}
+                            </NavLink>
+                            <NavLink to='stats'>
+                                {({ isActive }) => (
+                                    <div className={isActive ? 'folder stats linkActive' : 'folder stats'}>
+                                        <span className="stats purple"><VscPulse /></span>
+                                        <p>Stats</p>
+                                    </div>
+                                )}
+                            </NavLink>
+                            <NavLink to='projects'>
+                                {({ isActive }) => (
+                                    <div className={isActive ? 'folder linkActive' : 'folder'}>
+                                        <span className="green"><VscFolderOpened /></span>
+                                        <p>Projects</p>
+                                    </div>
+                                )}
+                            </NavLink>
                             <div className="projects">
                                 <div className="folder">
                                     <span className="blue"><VscCode /></span>
