@@ -3,11 +3,16 @@ import 'simplebar/dist/simplebar.min.css';
 
 import './projects.styles.scss';
 
-const Projects = () => {
+const Projects = ({repos}) => {
 
     return (
         <SimpleBar className="about-container">
-            <p>Projects</p>
+            {repos.map( repo => {
+                const formatName = repo.name.replace('ks-','').replace('-', ' ');
+                return(
+                    <p key={repo.id}>{formatName}</p>
+                )
+            })}
         </SimpleBar>
     )
 }
