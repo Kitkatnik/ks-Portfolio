@@ -17,7 +17,7 @@ import {
     VscCode
 } from 'react-icons/vsc';
 
-const Explorer = () => {
+const Explorer = ({repos}) => {
 
     return (
             <div className="explorer">
@@ -74,66 +74,15 @@ const Explorer = () => {
                                 )}
                             </NavLink>
                             <div className="projects">
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>This link is too long to fit in the explorer without messing everything up</p>
-                                </div>
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
-                                </div>
-                                <div className="folder">
-                                    <span className="blue"><VscCode /></span>
-                                    <p>Links here</p>
-                                </div>
+                                {repos.map( repo => {
+                                    const formatName = repo.name.replace('ks-','').replace('wip-','').replaceAll('-', ' ');
+                                    return(
+                                        <div className='folder' key={repo.id}>
+                                            <span className='blue'><VscCode /></span>
+                                            <p>{formatName}</p>
+                                        </div>
+                                    )
+                                })}
                             </div>
                         </SimpleBar>
                     </div>
