@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 // import { base64 } from 'base-64';
 
-import { listOfRepos } from './utils/github/github.utils';
+import { storeRepos } from './utils/github/github.utils';
+import { getRepos } from './utils/firebase/firebase.utils'; 
 import { inject } from '@vercel/analytics';
 
 import './App.scss'
@@ -25,8 +26,13 @@ function App() {
   const [repos, setRepos] = useState([]);
 
   useEffect( () => {
-    const listRepos = () => listOfRepos().then(setRepos);
-    listRepos();
+    const readRepos = () => getRepos().then(setRepos);
+    readRepos();
+    console.log(repos);
+  }, [])
+
+  useEffect( () => {
+    storeRepos();
   }, [])
 
   return (
@@ -34,10 +40,10 @@ function App() {
       <BrowserWindow />
       <div className="app">
         <IconBar />
-        <Explorer repos={repos} />
+        <Explorer />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/projects' element={<Projects repos={repos} />} />
+          <Route path='/projects' element={<Projects />} />
           <Route path='/resume' element={<Resume />} />
           <Route path='/stats' element={<Stats />} />
         </Routes>
