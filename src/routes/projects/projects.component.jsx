@@ -8,7 +8,7 @@ const Projects = ({repos}) => {
     return (
         <SimpleBar className="about-container">
             {repos.map( repo => {
-                const formatName = repo.name.replace('ks-','').replace('-', ' ');
+                const formatName = repo.name.replace('ks-','').replace('-', ' ').replaceAll('-', ' ');
                 return(
                     <p key={repo.id}>{formatName}</p>
                 )
