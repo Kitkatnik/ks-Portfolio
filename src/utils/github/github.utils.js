@@ -1,7 +1,7 @@
 import { Octokit } from "octokit";
 import { createRepoDocument } from "../firebase/firebase.utils";
 
-const octokit = new Octokit({ auth: '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' });
+const octokit = new Octokit({ auth: process.env.GH_TOKEN });
 
 const limits = async() => {
     const {rate} = await octokit.request('GET /rate_limit', {}).then(({data}) => data)
