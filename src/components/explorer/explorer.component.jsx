@@ -73,7 +73,7 @@ const Explorer = ({repos}) => {
                                     </div>
                                 )}
                             </NavLink>
-                            {/* <div className="projects">
+                            <div className="projects">
                                 {repos.map( repo => {
                                     const formatName = repo.name.replace('ks-','').replace('wip-','').replaceAll('-', ' ');
                                     return(
@@ -83,7 +83,7 @@ const Explorer = ({repos}) => {
                                         </div>
                                     )
                                 })}
-                            </div> */}
+                            </div>
                         </SimpleBar>
                     </div>
                     <div className="bottom">

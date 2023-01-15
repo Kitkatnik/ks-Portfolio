@@ -28,7 +28,7 @@ function App() {
   useEffect( () => {
     const readRepos = () => getRepos().then(setRepos);
     readRepos();
-    console.log(repos);
+    // console.log(repos);
   }, [])
 
   useEffect( () => {
@@ -40,10 +40,10 @@ function App() {
       <BrowserWindow />
       <div className="app">
         <IconBar />
-        <Explorer />
+        <Explorer repos={repos} />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/projects' element={<Projects />} />
+          <Route path='/projects' element={<Projects repos={repos} />} />
           <Route path='/resume' element={<Resume />} />
           <Route path='/stats' element={<Stats />} />
         </Routes>

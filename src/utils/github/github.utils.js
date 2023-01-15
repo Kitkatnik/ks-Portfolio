@@ -1,9 +1,7 @@
 import { Octokit } from "octokit";
 import { createRepoDocument } from "../firebase/firebase.utils";
 
-const token = process.env.REACT_APP_GH_TOKEN;
-
-const octokit = new Octokit({ auth: token });
+const octokit = new Octokit({ auth: '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' });
 
 const limits = async() => {
     const {rate} = await octokit.request('GET /rate_limit', {}).then(({data}) => data)
@@ -46,12 +44,14 @@ const requestRepos = async () => {
         sort: 'created',
     })
     const { data } = repos;
+    
     return data
         .filter( repo => /^ks-/.test(repo.name))
         .map( repo => {
             return {
                 id: repo.id,
                 name: repo.name,
+                description: repo.description,
                 url: repo.html_url,
                 contents_raw: null,
                 contents_html: null,
