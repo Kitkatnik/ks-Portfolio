@@ -48,7 +48,7 @@
 
                 .links{
                     display: flex;
-                    gap: 100px;
+                    gap: 10%;
 
                     .project-page-link{
                         text-decoration: underline;
@@ -79,4 +79,31 @@
             }
         }
     }
+}
+
+
+@media (max-width: 1200px){
+    .project-container{
+        flex-direction: column;
+        margin-bottom: 70px;
+
+        .project-img{
+            margin-bottom: 20px !important;
+            max-width: 80% !important;
+    
+            .img-popup{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 576px){
+
 }

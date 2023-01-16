@@ -43,9 +43,6 @@ const ProjectPreview = ({ repo, index }) => {
                                 <p>GITHUB {charCode(codes.greaterThan)}</p>
                                     
                             </a>
-                            <a href={demoUrl} target="_blank" rel="noreferrer" className='project-page-link'>
-                            <p>DEMO {charCode(codes.greaterThan)}</p>
-                            </a>
                         </div>
                     </div>
                 </div>
