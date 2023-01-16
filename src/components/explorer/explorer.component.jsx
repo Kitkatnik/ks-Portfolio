@@ -44,7 +44,7 @@ const Explorer = ({repos}) => {
                             <NavLink to='/'>
                                 { ({ isActive }) => (
                                     <div className={isActive ? 'folder home linkActive' : 'folder home'}>
-                                        <span className="red"><VscAccount /></span>
+                                        <span className="purple"><VscAccount /></span>
                                         <p>Home</p>
                                     </div>
                                 )}
@@ -60,7 +60,7 @@ const Explorer = ({repos}) => {
                             <NavLink to='stats'>
                                 {({ isActive }) => (
                                     <div className={isActive ? 'folder stats linkActive' : 'folder stats'}>
-                                        <span className="stats purple"><VscPulse /></span>
+                                        <span className="stats red"><VscPulse /></span>
                                         <p>Stats</p>
                                     </div>
                                 )}

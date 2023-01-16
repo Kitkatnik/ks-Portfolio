@@ -39,8 +39,8 @@ export const createRepoDocument = async (repo) => {
     }
 
     if(/(<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https:\/\/camo.githubusercontent.com\/)(.*)(<\/a><\/p>)/s.test(contents_html)){
-        const currTechStack = contents_html.match(/(<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https:\/\/camo.githubusercontent.com\/)(.*)(<\/a><\/p>)/s);
-        techStackBadges = currTechStack[0];
+        const currTechStack = contents_html.match(/<img src="https:\/\/camo.githubusercontent.com\/.*?style=for-the-badge" style="max-width: 100%;">/g);
+        techStackBadges = currTechStack.join(' ');
     }
 
     if(/(\[Click Here to Demo)(.*)(.com\)|.app\/\))/s.test(contents_raw)){
