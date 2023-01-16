@@ -1,0 +1,37 @@
+.project-container{
+    background-color: #1D1D2E;
+    width: 100%;
+    z-index:100;
+    padding: 1% 2%;
+    font-size: 0.9em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    font-size: 1em;
+    margin-bottom: 10px;
+
+    .comment{
+        color: #A676E0;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .code{
+        color: #ed736c;
+    }
+
+    .identifier{
+        color: #69BE7D;
+    }
+    .variable{
+        color: orange;
+        font-style: italic;
+    }
+    .style{
+        color: #E3DE80;
+    }
+
+    .nested{
+        padding: 0 0 0 2%;
+    }
+}

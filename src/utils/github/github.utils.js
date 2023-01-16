@@ -17,7 +17,7 @@ const limits = async() => {
     // Will display time in 10:30:23 format
     const formattedTime = hours + ':' + minutes.substring(-2) + ':' + seconds.substring(-2);
 
-    // console.log(formattedTime);
+    console.log(formattedTime);
 }
 limits();
 
@@ -51,10 +51,16 @@ const requestRepos = async () => {
             return {
                 id: repo.id,
                 name: repo.name,
+                formattedName: null,
                 description: repo.description,
                 url: repo.html_url,
+                imageUrl: null,
+                demoUrl: null,
                 contents_raw: null,
                 contents_html: null,
+                techStackBadges: null,
+                createdAt: null,
+                updatedAt: null,
             }
         })
 }
