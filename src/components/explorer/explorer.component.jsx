@@ -1,5 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
+import { useContext } from 'react';
+import { ReposContext } from '../../contexts/repos.context';
+
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 
@@ -17,8 +20,9 @@ import {
     VscCode
 } from 'react-icons/vsc';
 
-const Explorer = ({repos}) => {
-
+const Explorer = () => {
+    const { repos } = useContext(ReposContext);
+console.log(repos)
     return (
             <div className="explorer">
                 <div className="header">

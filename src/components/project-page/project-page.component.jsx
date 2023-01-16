@@ -1,8 +1,12 @@
 import { useParams } from 'react-router-dom';
+import { useContext } from 'react';
+import { ReposContext } from '../../contexts/repos.context';
 
 import './project-page.styles.scss';
 
-const ProjectPage = ({ repos }) => {
+const ProjectPage = () => {
+    const { repos } = useContext(ReposContext);
+    
     const { project } = useParams();
     console.log(project)
     console.log(repos)

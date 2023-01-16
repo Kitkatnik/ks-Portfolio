@@ -1,3 +1,6 @@
+import { useContext } from 'react';
+import { ReposContext } from '../../contexts/repos.context';
+
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 
@@ -5,7 +8,8 @@ import ProjectPreview from '../../components/project-preview/project-preview.com
 
 import './projects-overview.styles.scss';
 
-const ProjectsOverview = ({repos}) => {
+const ProjectsOverview = () => {
+    const { repos } = useContext(ReposContext);
 
     const codes = {
         leftBrace: 123,

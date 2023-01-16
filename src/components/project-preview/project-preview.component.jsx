@@ -6,7 +6,7 @@ import {
 } from 'react-icons/vsc';
 
 const ProjectPreview = ({ repo, index }) => {
-    const { name, formattedName, imageUrl, url, demoUrl, description, techStackBadges } = repo;
+    const { name, formattedName, imageUrl, url, description, techStackBadges } = repo;
 
     const codes = {
         leftBrace: 123,
@@ -21,7 +21,7 @@ const ProjectPreview = ({ repo, index }) => {
             
             <div className='project-container'>
                 <div className='project-img'> 
-                    <img src={imageUrl} className='img-popup' />
+                    <img src={imageUrl} alt={`Screenshot of ${repo.formattedName}`} className='img-popup' />
                 </div>
                 <div className='project-info'>
                     <div className='project-content'>

@@ -1,15 +1,19 @@
-import { Routes, Route } from 'react-router-dom';
+import { Fragment } from 'react';
+import { Routes, Route, Outlet } from 'react-router-dom';
 
 import ProjectsOverview from '../../components/projects-overview/projects-overview.component';
 import ProjectPage from '../../components/project-page/project-page.component';
 
-const Projects = ({ repos }) => {
+const Projects = () => {
 
     return (
-        <Routes>
-            <Route index element={<ProjectsOverview repos={repos} />} />
-            <Route path=":project" element={<ProjectPage repos={repos} />} />
-        </Routes>
+        <>
+            <Routes>
+                <Route index element={<ProjectsOverview />} />
+                <Route path=":project" element={<ProjectPage />} />
+            </Routes>
+            <Outlet />
+        </>
     )
 }
 
