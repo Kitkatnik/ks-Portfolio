@@ -43,9 +43,9 @@ function App() {
         <Explorer repos={repos} />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/projects' element={<Projects repos={repos} />} />
-          <Route path='/resume' element={<Resume />} />
-          <Route path='/stats' element={<Stats />} />
+          <Route path='projects/*' element={<Projects repos={repos} />} />
+          <Route path='resume' element={<Resume />} />
+          <Route path='stats' element={<Stats />} />
         </Routes>
       </div>
       <StatusBar />

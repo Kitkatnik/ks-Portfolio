@@ -77,10 +77,12 @@ const Explorer = ({repos}) => {
                                 {repos.map( repo => {
                                     const formatName = repo.name.replace('ks-','').replace('wip-','').replaceAll('-', ' ');
                                     return(
-                                        <div className='folder' key={repo.id}>
-                                            <span className='blue'><VscCode /></span>
-                                            <p>{formatName}</p>
-                                        </div>
+                                        <NavLink to={`projects/${repo.name}`}>
+                                            <div className='folder' key={repo.id}>
+                                                <span className='blue'><VscCode /></span>
+                                                <p>{formatName}</p>
+                                            </div>
+                                        </NavLink>
                                     )
                                 })}
                             </div>
