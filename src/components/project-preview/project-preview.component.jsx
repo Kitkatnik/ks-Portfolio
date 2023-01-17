@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './project-preview.styles.scss';
 import { 
@@ -35,9 +36,9 @@ const ProjectPreview = ({ repo, index }) => {
                         </div>
                         <div className='dots'>. . . .</div>
                         <div className='links'>
-                            <a href={`projects/${name}`} className='project-page-link'>
-                            <p>LEARN MORE {charCode(codes.greaterThan)}</p>
-                            </a>
+                            <NavLink to={name} className='project-page-link'>
+                                <p>LEARN MORE {charCode(codes.greaterThan)}</p>
+                            </NavLink>
                             <a href={url} target="_blank" rel="noreferrer"  className='project-repo-link'>
                                 <span><VscGithubInverted /></span> 
                                 <p>GITHUB {charCode(codes.greaterThan)}</p>

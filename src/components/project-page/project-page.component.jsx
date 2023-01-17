@@ -3,20 +3,29 @@ import { useContext } from 'react';
 import { ReposContext } from '../../contexts/repos.context';
 
 import './project-page.styles.scss';
+import { VscLoading } from 'react-icons/vsc';
 
 const ProjectPage = () => {
     const { repos } = useContext(ReposContext);
-    
     const { project } = useParams();
-    console.log(project)
-    console.log(repos)
+
+    let content = null;
     const currRepo = repos.filter( repo => {
         return repo.name === project;
     })
-    const { contents_html } = currRepo[0];
+    if(repos.length > 0){
+        content = currRepo[0].contents_html;
+    }
 
     return (
-        <div className='projects-page-container' dangerouslySetInnerHTML={{ __html: contents_html }} />
+        <div className='nested'>
+            {
+                repos.length > 0
+                ? <div className='projects-page-container' dangerouslySetInnerHTML={{ __html: content }} />
+                : 'Loading your project...'
+            }
+            <br/>
+        </div>
     )
 }
 

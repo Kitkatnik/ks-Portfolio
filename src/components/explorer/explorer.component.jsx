@@ -82,11 +82,13 @@ console.log(repos)
                                     const formatName = repo.name.replace('ks-','').replace('wip-','').replaceAll('-', ' ');
                                     return(
                                         <NavLink to={`projects/${repo.name}`}>
-                                            <div className='folder' key={repo.id}>
+                                        {({ isActive }) => (
+                                            <div className={isActive ? 'folder linkActive' : 'folder'} key={repo.id}>
                                                 <span className='blue'><VscCode /></span>
                                                 <p>{formatName}</p>
                                             </div>
-                                        </NavLink>
+                                        )}
+                                    </NavLink>
                                     )
                                 })}
                             </div>

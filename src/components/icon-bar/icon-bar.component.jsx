@@ -20,6 +20,8 @@ const IconBar = () => {
 
     const onClickHandler = () => setPopup(!popup);
 
+    const onLinkChangeHandler = () => setPopup(!popup);;
+
     return (
             <>
                 <div className='iconbar'>
@@ -47,30 +49,30 @@ const IconBar = () => {
                         <div className={popup ? 'show-menu' : 'hide-menu'}>
                             <NavLink to="/">
                                 {({ isActive }) => (
-                                    <p className={isActive ? 'linkActive' : undefined}>
+                                    <button className={isActive ? 'linkActive' : undefined} onClick={onLinkChangeHandler}>
                                         /* HOME */
-                                    </p>
+                                    </button>
                                 )}
                             </NavLink> 
                             <NavLink to="/resume">
                                 {({ isActive }) => (
-                                    <p className={isActive ? 'linkActive' : undefined}>
+                                    <button className={isActive ? 'linkActive' : undefined} onClick={onLinkChangeHandler}>
                                         /* RESUME */
-                                    </p>
+                                    </button>
                                 )}
                             </NavLink>
                             <NavLink to="/stats">
                                 {({ isActive }) => (
-                                    <p className={isActive ? 'linkActive' : undefined}>
+                                    <button className={isActive ? 'linkActive' : undefined} onClick={onLinkChangeHandler}>
                                         /* STATS */
-                                    </p>
+                                    </button>
                                 )}
                             </NavLink>
                             <NavLink to="/projects">
                             {({ isActive }) => (
-                                    <p className={isActive ? 'linkActive' : undefined}>
+                                    <button className={isActive ? 'linkActive' : undefined} onClick={onLinkChangeHandler}>
                                         /* PROJECTS */
-                                    </p>
+                                    </button>
                                 )}
                             </NavLink>
                         </div>
