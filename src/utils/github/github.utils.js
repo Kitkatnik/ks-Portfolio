@@ -1,11 +1,11 @@
 import { Octokit } from "octokit";
 import { createRepoDocument } from "../firebase/firebase.utils";
 
-const octokit = new Octokit({ auth: process.env.GH_TOKEN });
+const octokit = new Octokit({ auth: `${process.env.GH_TOKEN}` });
 
 const limits = async() => {
     const {rate} = await octokit.request('GET /rate_limit', {}).then(({data}) => data)
-    // console.log(rate)
+    console.log(rate)
     const date = new Date(rate.reset * 1000);
     // Hours part from the timestamp
     const hours = date.getHours();
