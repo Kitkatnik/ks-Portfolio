@@ -15,6 +15,10 @@ import {
 } from 'react-icons/si';
 
 const IconBar = () => {
+    const codes = {
+        forwardSlash: 47,
+    }
+    const charCode = (code) => { return String.fromCharCode(code) }
 
     const [popup, setPopup] = useState(false);
 
@@ -47,31 +51,31 @@ const IconBar = () => {
                 <MediaQuery maxWidth={768}>
                     <div className="icon-bar-navigation">
                         <div className={popup ? 'show-menu' : 'hide-menu'}>
-                            <NavLink to="/">
+                            <NavLink to="/"> 
                                 {({ isActive }) => (
                                     <button className={isActive ? 'linkActive' : undefined} onClick={onLinkChangeHandler}>
-                                        /* HOME */
+                                        {`${charCode(codes.forwardSlash)}* HOME *${charCode(codes.forwardSlash)}`}
                                     </button>
                                 )}
                             </NavLink> 
-                            <NavLink to="/resume">
+                            {/* <NavLink to="/resume">
                                 {({ isActive }) => (
                                     <button className={isActive ? 'linkActive' : undefined} onClick={onLinkChangeHandler}>
-                                        /* RESUME */
+                                        {`${charCode(codes.forwardSlash)}* RESUME *${charCode(codes.forwardSlash)}`}
                                     </button>
                                 )}
                             </NavLink>
                             <NavLink to="/stats">
                                 {({ isActive }) => (
                                     <button className={isActive ? 'linkActive' : undefined} onClick={onLinkChangeHandler}>
-                                        /* STATS */
+                                        {`${charCode(codes.forwardSlash)}* STATS *${charCode(codes.forwardSlash)}`}
                                     </button>
                                 )}
-                            </NavLink>
+                            </NavLink> */}
                             <NavLink to="/projects">
                             {({ isActive }) => (
                                     <button className={isActive ? 'linkActive' : undefined} onClick={onLinkChangeHandler}>
-                                        /* PROJECTS */
+                                        {`${charCode(codes.forwardSlash)}* PROJECTS *${charCode(codes.forwardSlash)}`}
                                     </button>
                                 )}
                             </NavLink>

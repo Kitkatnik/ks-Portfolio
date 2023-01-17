@@ -19,6 +19,7 @@ import Resume from './routes/resume/resume.component';
 import Stats from './routes/stats/stats.component';
 import ProjectsOverview from './components/projects-overview/projects-overview.component';
 import ProjectPage from './components/project-page/project-page.component';
+import NotFound from './routes/not-found/not-found.component';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,7 +31,7 @@ const router = createBrowserRouter(
       </Route>
       <Route path='resume' element={<Resume />} />
       <Route path='stats' element={<Stats />} />
-      {/* <Route path="*" element={<NotFound />} />  */}
+      <Route path="*" element={<NotFound />} /> 
     </Route>
   )
 )

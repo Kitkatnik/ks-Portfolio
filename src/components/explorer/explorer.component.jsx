@@ -22,7 +22,7 @@ import {
 
 const Explorer = () => {
     const { repos } = useContext(ReposContext);
-console.log(repos)
+// console.log(repos)
     return (
             <div className="explorer">
                 <div className="header">
@@ -53,7 +53,7 @@ console.log(repos)
                                     </div>
                                 )}
                             </NavLink>
-                            <NavLink to='resume'>
+                            {/* <NavLink to='resume'>
                                 {({ isActive }) => (
                                     <div className={isActive ? 'folder linkActive' : 'folder'}>
                                         <span className="yellow"><VscBriefcase /></span>
@@ -68,8 +68,8 @@ console.log(repos)
                                         <p>Stats</p>
                                     </div>
                                 )}
-                            </NavLink>
-                            <NavLink to='projects'>
+                            </NavLink> */}
+                            <NavLink end to='projects'>
                                 {({ isActive }) => (
                                     <div className={isActive ? 'folder linkActive' : 'folder'}>
                                         <span className="green"><VscFolderOpened /></span>
@@ -81,7 +81,7 @@ console.log(repos)
                                 {repos.map( repo => {
                                     const formatName = repo.name.replace('ks-','').replace('wip-','').replaceAll('-', ' ');
                                     return(
-                                        <NavLink to={`projects/${repo.name}`}>
+                                        <NavLink to={`projects/${repo.name}`} state={repo}>
                                         {({ isActive }) => (
                                             <div className={isActive ? 'folder linkActive' : 'folder'} key={repo.id}>
                                                 <span className='blue'><VscCode /></span>

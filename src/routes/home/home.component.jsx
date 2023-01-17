@@ -32,9 +32,6 @@ const Home = () => {
             <div className="position-container">
 
                 <div className="code-popup">
-                    {/* <p className="portrait-message">
-                        (alias) <span className="code">const</span> myPortrait<span className="code">:</span> <const className="type">string</const>
-                    </p> */}
                     <p className="portrait-message">
                         <span className="code">import</span> myPortrait
                     </p>
@@ -79,7 +76,7 @@ const Home = () => {
                 </span> <span className="identifier">
                     Professional
                 </span> = (<span className="variable">
-                    skills
+                {charCode(codes.leftBrace)} skills {charCode(codes.rightBrace)}
                 </span>) ={charCode(codes.greaterThan)} {charCode(codes.leftBrace)}
             </p>
 

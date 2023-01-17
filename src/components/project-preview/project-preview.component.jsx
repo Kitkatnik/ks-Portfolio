@@ -36,7 +36,7 @@ const ProjectPreview = ({ repo, index }) => {
                         </div>
                         <div className='dots'>. . . .</div>
                         <div className='links'>
-                            <NavLink to={name} className='project-page-link'>
+                            <NavLink to={name} className='project-page-link' state={repo}>
                                 <p>LEARN MORE {charCode(codes.greaterThan)}</p>
                             </NavLink>
                             <a href={url} target="_blank" rel="noreferrer"  className='project-repo-link'>

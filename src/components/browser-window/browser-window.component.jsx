@@ -33,12 +33,12 @@ const BrowserWindow = () => {
                 <NavLink to='/'>
                     {({ isActive }) => (
                         <div className='browser-menu'>
-                            <span className="red"><VscAccount /></span>
+                            <span className="purple"><VscAccount /></span>
                             <p className={isActive ? 'linkActive' : undefined}>Home</p>
                         </div> 
                     )}
                 </NavLink>
-                <NavLink to="/resume">
+                {/* <NavLink to="/resume">
                     {({ isActive }) => (
                         <div className='browser-menu'>
                             <span className="yellow"><VscBriefcase /></span>
@@ -49,11 +49,11 @@ const BrowserWindow = () => {
                 <NavLink to="/stats">
                     {({ isActive }) => (
                         <div className='browser-menu'>
-                            <span className="stats purple"><VscPulse /></span>
+                            <span className="stats red"><VscPulse /></span>
                             <p className={isActive ? 'linkActive' : undefined}>Stats</p>
                         </div>
                     )}
-                </NavLink>
+                </NavLink> */}
                 <NavLink to="/projects">
                     {({ isActive }) => (
                         <div className='browser-menu'>
