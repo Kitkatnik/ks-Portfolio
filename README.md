@@ -2,17 +2,11 @@
 
 <div align="center">
 
-<h2>Mockup</h2>
+![Site_Preview](https://user-images.githubusercontent.com/5871075/213026800-38515acf-980a-4159-9972-bba2f4b5cffc.png)
 
-<img width="70%" alt="Portfolio MockUp that looks like VSCode" src="https://user-images.githubusercontent.com/5871075/204670157-a0335eb6-9ee6-4f04-bc1c-e623a3c51aa7.png">
+[Click Here to Demo](https://katyasarmiento.com)
 
-[See full mockup here](https://www.figma.com/file/GqXYhDV2zVOPyfx5gRmOOh/P21563---HW-Portfolio?node-id=0%3A1&t=Kep3FCw2dpJ7BLso-1) or in repo issues.
-
-<h2>Screenshot</h2>
-
-Screenshot coming soon
-
-[See work in progress demo here](https://katya-sarmiento-portfolio.vercel.app/)
+*That's if you're not already seeing this through my portfolio ;)*
 
 </div>
 
@@ -20,7 +14,11 @@ Screenshot coming soon
 
 ### 💼 About this project
 
-About a year ago, I asked my [design team](https://app.manypixels.co/onboard?referral=cjxam0civ6d1z07704c0glafm) *(affiliate link)* to create [a mockup of a portfolio site that looks like a code editor](https://www.figma.com/file/GqXYhDV2zVOPyfx5gRmOOh/P21563---HW-Portfolio?node-id=0%3A1&t=Kep3FCw2dpJ7BLso-1). This mockup was for my partner, who had recently graduated Thinkful Software Engineering Immersion. He never built the website, so I took the mockup for myself and started to build it out from scratch to practice React. I changed it a bit to more closely resemble my own VSCode editor, including small easter eggs and links to extensions that I use on a daily basis.
+About a year ago, I asked my [design team](https://app.manypixels.co/onboard?referral=cjxam0civ6d1z07704c0glafm) *(affiliate link)* to create [a mockup of a portfolio site that looks like VSCode](https://www.figma.com/file/GqXYhDV2zVOPyfx5gRmOOh/P21563---HW-Portfolio?node-id=0%3A1&t=Kep3FCw2dpJ7BLso-1). 
+
+<img width="50%" alt="Portfolio MockUp that looks like VSCode" src="https://user-images.githubusercontent.com/5871075/204670157-a0335eb6-9ee6-4f04-bc1c-e623a3c51aa7.png">
+
+This mockup was for my partner, who had recently graduated Thinkful Software Engineering Immersion. He never built the website, so I took the mockup for myself and started to build it out from scratch to practice React. I changed it a bit to more closely resemble my own VSCode editor, including small easter eggs and links to extensions that I use on a daily basis.
 
 ### 🖥 About the tech stack
 
