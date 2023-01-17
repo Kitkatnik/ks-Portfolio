@@ -19,17 +19,20 @@ import Stats from './routes/stats/stats.component';
 import ProjectsOverview from './components/projects-overview/projects-overview.component';
 import ProjectPage from './components/project-page/project-page.component';
 import NotFound from './routes/not-found/not-found.component';
+import ErrorBoundary from './routes/error-boundary/error-boundary.component';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
-      <Route index element={<Home />} />
-      <Route path='projects' element={<Projects />} >
-        <Route index element={<ProjectsOverview />} />
-        <Route path=":project" element={<ProjectPage />} />
+      <Route  errorElement={<ErrorBoundary />} >
+        <Route index element={<Home />} />
+        <Route path='projects' element={<Projects />} >
+          <Route index element={<ProjectsOverview />} />
+          <Route path=":project" element={<ProjectPage />}/>
+        </Route>
+        <Route path='resume' element={<Resume />} />
+        <Route path='stats' element={<Stats />} />
       </Route>
-      <Route path='resume' element={<Resume />} />
-      <Route path='stats' element={<Stats />} />
       <Route path="*" element={<NotFound />} /> 
     </Route>
   )
