@@ -1,0 +1,22 @@
+.error-boundary-container{
+    background-color: #1D1D2E;
+    width: 100%;
+    z-index:100;
+    padding: 1% 2%;
+    font-size: 0.9em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    white-space: pre-line;
+
+    .code{
+        color: #ed736c;
+        font-weight: bold;
+    }
+
+    .comment{
+        color: #A676E0;
+    }
+}

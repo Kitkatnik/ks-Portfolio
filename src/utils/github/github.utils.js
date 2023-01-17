@@ -1,7 +1,7 @@
 import { Octokit } from "octokit";
 import { createRepoDocument } from "../firebase/firebase.utils";
 
-const octokit = new Octokit({ auth: `${process.env.GH_TOKEN}` });
+const octokit = new Octokit({ auth: process.env.REACT_APP_GH_TOKEN });
 
 const limits = async() => {
     const {rate} = await octokit.request('GET /rate_limit', {}).then(({data}) => data)
@@ -41,7 +41,7 @@ async function requestRetry(route, parameters) {
 const requestRepos = async () => {
     const repos = await requestRetry('GET /users/{username}/repos{?sort}', {
         username: 'kitkatnik',
-        sort: 'created',
+        sort: 'updated',
     })
     const { data } = repos;
     
@@ -72,7 +72,7 @@ const requestREADME = async () => {
     for(let i = 0; i < repos.length; i++){
         const rawContents = await requestRetry('GET /repos/{owner}/{repo}/readme', {
             headers:{
-                'accept': 'application/vnd.github.VERSION.raw',
+                'accept': 'application/vnd.github.raw',
             },
             owner: 'kitkatnik',
             repo: repos[i].name,
@@ -81,7 +81,7 @@ const requestREADME = async () => {
 
         const htmlContents = await requestRetry('GET /repos/{owner}/{repo}/readme', {
             headers:{
-                'accept': 'application/vnd.github.VERSION.html',
+                'accept': 'application/vnd.github.html',
             },
             owner: 'kitkatnik',
             repo: repos[i].name,
