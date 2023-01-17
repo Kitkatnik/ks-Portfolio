@@ -67,7 +67,7 @@ export const createRepoDocument = async (repo) => {
                 contents_html,
                 updatedAt,
             }).then(function(){
-                console.log('repo doc updated');
+                console.log(`repo doc updated for ${name}`);
             })
         } catch(error){
             console.log('error updating the repo doc', error.message)
@@ -89,7 +89,7 @@ export const createRepoDocument = async (repo) => {
                 createdAt,
                 updatedAt: null,
             }).then(function(){
-                console.log('repo doc created');
+                console.log(`repo doc created for ${name}`);
             })
         } catch(error){
             console.log('error creating the repo doc', error.message)
