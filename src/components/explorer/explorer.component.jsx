@@ -1,5 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
+import { useContext } from 'react';
+import { ReposContext } from '../../contexts/repos.context';
+
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 
@@ -17,8 +20,9 @@ import {
     VscCode
 } from 'react-icons/vsc';
 
-const Explorer = ({repos}) => {
-
+const Explorer = () => {
+    const { repos } = useContext(ReposContext);
+// console.log(repos)
     return (
             <div className="explorer">
                 <div className="header">
@@ -49,7 +53,7 @@ const Explorer = ({repos}) => {
                                     </div>
                                 )}
                             </NavLink>
-                            <NavLink to='resume'>
+                            {/* <NavLink to='resume'>
                                 {({ isActive }) => (
                                     <div className={isActive ? 'folder linkActive' : 'folder'}>
                                         <span className="yellow"><VscBriefcase /></span>
@@ -64,8 +68,8 @@ const Explorer = ({repos}) => {
                                         <p>Stats</p>
                                     </div>
                                 )}
-                            </NavLink>
-                            <NavLink to='projects'>
+                            </NavLink> */}
+                            <NavLink end to='projects'>
                                 {({ isActive }) => (
                                     <div className={isActive ? 'folder linkActive' : 'folder'}>
                                         <span className="green"><VscFolderOpened /></span>
@@ -77,10 +81,14 @@ const Explorer = ({repos}) => {
                                 {repos.map( repo => {
                                     const formatName = repo.name.replace('ks-','').replace('wip-','').replaceAll('-', ' ');
                                     return(
-                                        <div className='folder' key={repo.id}>
-                                            <span className='blue'><VscCode /></span>
-                                            <p>{formatName}</p>
-                                        </div>
+                                        <NavLink to={`projects/${repo.name}`} state={repo}>
+                                        {({ isActive }) => (
+                                            <div className={isActive ? 'folder linkActive' : 'folder'} key={repo.id}>
+                                                <span className='blue'><VscCode /></span>
+                                                <p>{formatName}</p>
+                                            </div>
+                                        )}
+                                    </NavLink>
                                     )
                                 })}
                             </div>

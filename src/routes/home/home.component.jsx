@@ -4,7 +4,7 @@ import 'simplebar/dist/simplebar.min.css';
 import './home.styles.scss';
 import KatyaHeadshot from '../../assets/KatyaHeadshot.jpg';
 
-const Home = (test) => {
+const Home = () => {
     const codes = {
         leftBrace: 123,
         rightBrace: 125,
@@ -18,6 +18,7 @@ const Home = (test) => {
 
     return (
         <SimpleBar className="about-container">
+            {/* eslint-disable-next-line */}
             <p className="comment intro">// HI, I'M KATYA SARMIENTO</p><br />
             <p>
                 <span className="code">import</span> <span className="style">'./professional.styles.scss'</span>;
@@ -31,9 +32,6 @@ const Home = (test) => {
             <div className="position-container">
 
                 <div className="code-popup">
-                    {/* <p className="portrait-message">
-                        (alias) <span className="code">const</span> myPortrait<span className="code">:</span> <const className="type">string</const>
-                    </p> */}
                     <p className="portrait-message">
                         <span className="code">import</span> myPortrait
                     </p>
@@ -78,7 +76,7 @@ const Home = (test) => {
                 </span> <span className="identifier">
                     Professional
                 </span> = (<span className="variable">
-                    skills
+                {charCode(codes.leftBrace)} skills {charCode(codes.rightBrace)}
                 </span>) ={charCode(codes.greaterThan)} {charCode(codes.leftBrace)}
             </p>
 

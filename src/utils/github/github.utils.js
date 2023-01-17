@@ -5,7 +5,7 @@ const octokit = new Octokit({ auth: process.env.GH_TOKEN });
 
 const limits = async() => {
     const {rate} = await octokit.request('GET /rate_limit', {}).then(({data}) => data)
-    console.log(rate)
+    // console.log(rate)
     const date = new Date(rate.reset * 1000);
     // Hours part from the timestamp
     const hours = date.getHours();
@@ -17,7 +17,7 @@ const limits = async() => {
     // Will display time in 10:30:23 format
     const formattedTime = hours + ':' + minutes.substring(-2) + ':' + seconds.substring(-2);
 
-    console.log(formattedTime);
+    // console.log(formattedTime);
 }
 limits();
 
