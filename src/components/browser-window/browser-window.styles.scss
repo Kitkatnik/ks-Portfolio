@@ -1,47 +1,130 @@
 .browser-window {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #151523;
     border-radius: 10px 10px 0 0;
     border-bottom: 1px solid #1a1a2a;
-    padding: 3px 5px 2px 0;
+    font-family: -apple-system,BlinkMacSystemFont,sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 1%;
 
     .browser-options {
-        // background-color: green;
-        margin-left: 0.5em;
-        flex-grow: 3;
+        line-height: 0;
         font-size: 1.3em;
-        margin-bottom: -6px;
-        vertical-align: 0;
 
         .close-button {
             color: #fe6057;
-            display: inline;
+            display: inline-block;
+            // background-color: white;
         }
         .minimize-button {
             color: #fdbc2e;
+            display: inline-block;
+            // background-color: green;
         }
         .maximize-button {
             color: #28c840;
+            display: inline-block;
         }
     }
     .file-name{
-        font-size: 0.7em;
-        font-family: -apple-system,BlinkMacSystemFont,sans-serif;
-        font-weight: 300;
-        flex-grow: 2;
+        display: inline;
+        font-size: 0.9em;
+    }
+
+    .file-name-menu{
+        display: none;
     }
 
     .panel-options{
         color: #e7e7e7;
-        flex-grow: 1;
-        text-align: right;
-        padding-top: 3px;
-        padding-right: 10px;
-
+        font-size: 1.2em;
+        line-height: 0;
+        display: flex;
+        gap: 3px;
+        
         .panel-icon {
-            padding-left: 5px;
+            display: inline-block;
         }
+
+        a:hover{
+            border-radius: 2px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .browser-window{
+        font-size: 1.2em;
+    }
+        
+    .file-name{
+        display: none !important;
+    }
+
+    .file-name-menu{
+        display: flex !important;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+        min-height: 30px;
+        min-width: 50%;
+        
+        .browser-menu{
+            padding: 1% 2%;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+            span{
+                display: inline-block;
+                line-height: 0;
+                vertical-align: center;
+                text-align: center;
+                padding-right: 10%;
+            }
+            p {
+                color: rgb(132, 132, 179);
+            }
+
+            .yellow{
+                color: #fbc02d;
+            }
+
+            .blue{
+                color: #059be5;
+                // color: #03bbd4;
+            }
+
+            .green{
+                color: #4caf50;
+                // color: #8bc24b;
+            }
+
+            .purple{
+                color: #a677e0;
+            }
+
+            .red{
+                color: #ff5252;
+            }
+            
+            .linkActive{
+                color: rgb(231, 231, 231);
+    
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .browser-window{
+        display: none !important;
     }
 }

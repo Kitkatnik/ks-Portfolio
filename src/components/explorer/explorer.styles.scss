@@ -3,7 +3,7 @@
     font-family: -apple-system,BlinkMacSystemFont,sans-serif;
     font-weight: 300;
     min-width: 200px;
-    max-width: 200px;
+    max-width: 250px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -16,10 +16,10 @@
         padding: 10px 15px 10px 25px;
 
         p{ 
-            font-size: 0.7em;
+            font-size: 1em;
         }
         span{
-            font-size: 0.9em;
+            font-size: 1.2em;
         }
     }
 
@@ -46,11 +46,12 @@
         
                 span{
                     padding-left: 4px;
-                    font-size: 0.9em;
+                    font-size: 1em;
+                    line-height: 0;
                 }
         
                 p{
-                    font-size: 0.7em;
+                    font-size: 0.8em;
                     font-weight: bold;
                     padding: 1px 0 1px 5px;
                 }
@@ -63,37 +64,90 @@
                 z-index:2;
             }
 
-            .links{
+            .links{ 
                 z-index:1;
-                overflow-y: scroll;
+                overflow-y: auto;
+                overflow-x:hidden;
                 min-width: 0;
                 min-height: 0;
-                font-size: 0.8em;
-                background-color: rgb(0,0,0, 0);
-                // border: 5px solid blue;
+                font-size: 1em;
+                height: 100%;
+
+                .simplebar-scrollbar::before{
+                    background-color: rgba(114, 114, 172,0.5);
+                    border-radius: 0;
+                    width: 1em;
+                    padding: 0;
+                }
+
+                .home{
+                    margin-top: 1%;
+                }
 
                 .folder {
                     display: flex;
                     align-items: center;
                     justify-items: center;
-                    background-color: rgb(0,0,0, 0);
-                    padding: 5px 20px;
-                    // border: 2px solid yellow;
-        
-                    p {
-                        padding-left: 10px;
+                    padding: 2% 8%;
+                    line-height: 0; 
+                    
+                    p{
+                        line-height: normal !important;
+                    }
+
+                    .yellow{
+                        color: #fbc02d;
+                    }
+
+                    .blue{
+                        color: #059be5;
+                        // color: #03bbd4;
+                    }
+
+                    .green{
+                        color: #4caf50;
+                        // color: #8bc24b;
+                    }
+
+                    .purple{
+                        color: #a677e0;
+                    }
+
+                    .red{
+                        color: #ff5252;
+                    }
+
+                    span{
+                        display: inline-block;
+                        line-height: 0;
+                        vertical-align: center;
+                        text-align: center;
+                        font-size: 1em;
+                        padding-right: 3%;
                     }
                 }
-        
                 .folder:hover{
-                    background-color: #353561;
+                    background-color: rgba(139, 139, 191, 0.1);
+                }
+
+        
+                .linkActive{
+                    background-color: rgba(53, 53, 97, 0.35);
                 }
 
                 .projects{
-                    align-self: stretch;
-                    // border: 5px solid red;
+                    
+                    .folder{
+                        
+                        p{
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+
                     span{
-                        padding-left: 20px;
+                        padding-left: 10%;
                     }
                 }
             }
@@ -108,11 +162,13 @@
         
                 span{
                     padding-left: 4px;
-                    font-size: 0.9em;
+                    font-size: 1em;
+                    display: inline-block;
+                    line-height:0;
                 }
         
                 p{
-                    font-size: 0.7em;
+                    font-size: 0.8em;
                     font-weight: bold;
                     padding: 1px 0 1px 5px;
                 }
@@ -122,5 +178,11 @@
                 width: 100%;
             }
         }
+    }
+}
+
+@media (max-width: 992px){
+    .explorer{
+        display:none;
     }
 }

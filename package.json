@@ -7,16 +7,22 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@vercel/analytics": "^0.1.5",
-    "octokit": "^2.0.10",
+    "firebase": "^9.15.0",
+    "firebase-admin": "^11.4.1",
+    "octokit": "^2.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
+    "react-responsive": "^9.0.2",
+    "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
     "sass": "^1.56.1",
+    "simplebar": "^5.3.9",
+    "simplebar-react": "^2.4.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts  --max-http-header-size=1024 start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -38,5 +44,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://192.168.1.194:3000"
 }

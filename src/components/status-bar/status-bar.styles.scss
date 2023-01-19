@@ -1,44 +1,47 @@
 .status-bar{
+    background-color: #151523;
+    border-radius: 0 0 10px 10px;
+    font-family: -apple-system,BlinkMacSystemFont,sans-serif;
+    font-weight: 300;
+    font-size: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #151523;
-    border-radius: 0 0 10px 10px;
-    padding: 5px 15px;
-    font-size: 0.75em;
-    font-family: -apple-system,BlinkMacSystemFont,sans-serif;
-    font-weight: 300;
-    border-top: 1px solid #1a1a2a;
-    
-    a {
-        cursor: pointer;
-    }
+    margin: 0;
 
     .status-left{
-        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 10px;
 
-        .status{
-            padding-right: 15px; 
+    }
+    .block{ 
+        display: inline-block;
+        padding: 5px 10px;
 
-            .space {
-                padding-right: 5px;
-            }
+        .extension{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        span{
+            font-size: 0.9em;
+            display: inline-block;
+            line-height: 0;
         }
     }
 
-    .status-align{
-        vertical-align: 11%;
+    .block:hover{
+        background-color: rgb(168, 168, 205,0.1);
     }
 
     .status-right{
-        flex-grow: 1;
-        text-align: right;
+    }
+}
 
-        .status {
-            padding-left: 15px;
-        }
-        .space {
-            padding-left: 5px;
-        }
+@media (max-width: 1200px){
+    .status-bar{
+        display: none;
     }
 }
