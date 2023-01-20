@@ -28,4 +28,7 @@ This mockup was for my partner, who had recently graduated Thinkful Software Eng
 
 - Taking a [Figma Mockup](https://www.figma.com/file/GqXYhDV2zVOPyfx5gRmOOh/P21563---HW-Portfolio?node-id=0%3A1&t=Kep3FCw2dpJ7BLso-1) and building it from scratch
 - Using Github's API to import my repositories, using a special character to only showcase certain projects I designate
-- *To be continued...*
+- Set up Google Firebase as the database, after realizing that repeatedly fetching repos from Github's API doesn't make sense. I still want to improve this part to ONLY update the database if there's an actual update to the repo, instead of updating every single time the website is loaded.
+- I learned a lot about rate limits and sendign authenticated requests to Github and Firebase.
+- I realized the benefit of mobile-first design after 30 hours of already having worked on this portfolio. I've learned my lesson the hard way, and in the future I will work mobile-first. 
+- I could've done a better job of breaking up components into smaller parts with a focus on DRY coding.
