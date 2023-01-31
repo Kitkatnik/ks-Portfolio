@@ -31,15 +31,6 @@ const Explorer = () => {
                 </div>
                 <div className="files">
                     <div className="top">
-                        <a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager" target="_blank" rel="noreferrer">
-                            <div className="divider">
-                                <span><VscChevronRight /></span>
-                                <p>
-                                    PROJECT MANAGER: FAVORITES 
-                                    {/* (#) */}
-                                </p>
-                            </div>
-                        </a>
                         <div className="divider shadow">
                             <span><VscChevronDown /></span>
                             <p>PORTFOLIO (WORKSPACE)</p>
@@ -95,18 +86,6 @@ const Explorer = () => {
                         </SimpleBar>
                     </div>
                     <div className="bottom">
-                        <a href="https://marketplace.visualstudio.com/items?itemName=UrosVujosevic.explorer-manager" target="_blank" rel="noreferrer">
-                            <div className="divider">
-                                <span><VscChevronRight /></span>
-                                <p>BOOKMARKS: EXPLORER</p>
-                            </div>
-                        </a>
-                        <a href="https://yarnpkg.com/" target="_blank" rel="noreferrer">
-                            <div className="divider">
-                                <span><VscChevronRight /></span>
-                                <p>YARN</p>
-                            </div>
-                        </a>
                         <a href="https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets" target="_blank" rel="noreferrer">
                             <div className="divider">
                                 <span><VscChevronDown /></span>
