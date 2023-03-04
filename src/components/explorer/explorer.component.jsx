@@ -69,7 +69,7 @@ const Explorer = () => {
                                 )}
                             </NavLink>
                             <div className="projects">
-                                {repos.map( repo => {
+                                {repos.slice(0).reverse().map( repo => {
                                     const formatName = repo.name.replace('ks-','').replace('wip-','').replaceAll('-', ' ');
                                     return(
                                         <NavLink to={`projects/${repo.name}`} state={repo}>
