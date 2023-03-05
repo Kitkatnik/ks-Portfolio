@@ -12,7 +12,7 @@ const ProjectsOverview = () => {
     
         <div className='nested'>
             {
-                repos.map( (repo, index) => {
+                repos.slice(0).reverse().map( (repo, index) => {
                     return (
                         <div className='project-preview-container' key={repo.id}>
                             <ProjectPreview repo={repo} index={index} />
