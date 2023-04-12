@@ -2826,6 +2826,18 @@
   resolved "https://registry.npmjs.org/@types/linkify-it/-/linkify-it-3.0.2.tgz"
   integrity sha512-HZQYqbiFVWufzCwexrvh694SOim8z2d+xJl5UNamcvQFejLY/2YUtzXHYi3cHdI7PMlS8ejH2slRAOJQ32aNbA==
 
+"@types/lodash-es@^4.17.6":
+  version "4.17.7"
+  resolved "https://registry.yarnpkg.com/@types/lodash-es/-/lodash-es-4.17.7.tgz#22edcae9f44aff08546e71db8925f05b33c7cc40"
+  integrity sha512-z0ptr6UI10VlU6l5MYhGwS4mC8DZyYer2mCoyysZtSF7p26zOX8UpbrV0YpNYLGS8K4PUFIyEr62IMFFjveSiQ==
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash@*":
+  version "4.14.192"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.192.tgz#5790406361a2852d332d41635d927f1600811285"
+  integrity sha512-km+Vyn3BYm5ytMO13k9KTp27O75rbQ0NFw+U//g+PX7VZyjCioXaRFisqSIJRECljcTv73G3i6BpglNGHgUQ5A==
+
 "@types/long@^4.0.0", "@types/long@^4.0.1":
   version "4.0.2"
   resolved "https://registry.npmjs.org/@types/long/-/long-4.0.2.tgz"
@@ -7345,6 +7357,11 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
+lodash-es@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
+
 lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.npmjs.org/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz"
@@ -9493,13 +9510,22 @@ signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
-simplebar-react@^2.4.3:
-  version "2.4.3"
-  resolved "https://registry.npmjs.org/simplebar-react/-/simplebar-react-2.4.3.tgz"
-  integrity sha512-Ep8gqAUZAS5IC2lT5RE4t1ZFUIVACqbrSRQvFV9a6NbVUzXzOMnc4P82Hl8Ak77AnPQvmgUwZS7aUKLyBoMAcg==
+simplebar-core@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/simplebar-core/-/simplebar-core-1.2.3.tgz#d270ecec9aca14850c400a7aa80503858f6f23a5"
+  integrity sha512-xWZOYLlqWMW8qDCh1vcyyPdb10FOb8KJNCgqimsBKWS/o6a/9LnATjBgR2+nTzTHUT+DGOOf+TM8yj54/Io+dw==
   dependencies:
-    prop-types "^15.6.1"
-    simplebar "^5.3.9"
+    "@types/lodash-es" "^4.17.6"
+    can-use-dom "^0.1.0"
+    lodash "^4.17.21"
+    lodash-es "^4.17.21"
+
+simplebar-react@^3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/simplebar-react/-/simplebar-react-3.2.3.tgz#b0d1d6111ab0ef009547baf83df58977b8fec20a"
+  integrity sha512-GjbACC7KlDUlfIZSbLf7K4FQcHW4rS0OFAAs6YvJpHUsOZ5DtIzg1WD4Uv+nO8wfQLFXMyFHDVk0jm15APFRNA==
+  dependencies:
+    simplebar-core "^1.2.3"
 
 simplebar@^5.3.9:
   version "5.3.9"
