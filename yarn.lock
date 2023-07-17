@@ -1589,10 +1589,10 @@
   resolved "https://registry.yarnpkg.com/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.10.0.tgz#92ee8c88682bb1ff0938b751f88f108e7a73165a"
   integrity sha512-2I8y+vJVrPfPFJrnRGpao1Qc2Gu7wmYoo5ed2s5zK/DUGgcyY1Yr/xC0YdnKM4pi7rG3HqwW9ehAKUXoTMLdoA==
 
-"@google-cloud/firestore@^6.5.0":
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/@google-cloud/firestore/-/firestore-6.5.0.tgz#5049740e40eca75956264377ca9ffaab2c0f345d"
-  integrity sha512-U0QwG6pEQxO5c0v0eUylswozmuvlvz7iXSW+I18jzqR2hAFrUq2Weu1wm3NaH8wGD4ZL7W9Be4cMHG5CYU8LuQ==
+"@google-cloud/firestore@^6.6.0":
+  version "6.6.1"
+  resolved "https://registry.yarnpkg.com/@google-cloud/firestore/-/firestore-6.6.1.tgz#63bc93b414189a8a8e658a69c516a2ef995b6872"
+  integrity sha512-Z41j2h0mrgBH9qNIVmbRLqGKc6XmdJtWipeKwdnGa/bPTP1gn2SGTrYyWnpfsLMEtzKSYieHPSkAFp5kduF2RA==
   dependencies:
     fast-deep-equal "^3.1.1"
     functional-red-black-tree "^1.0.1"
@@ -5441,10 +5441,10 @@ find-up@^5.0.0:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
 
-firebase-admin@^11.7.0:
-  version "11.7.0"
-  resolved "https://registry.yarnpkg.com/firebase-admin/-/firebase-admin-11.7.0.tgz#ffcb17662f8652be9a11f676772a018cce149fe8"
-  integrity sha512-58y9dor/nrK4Dc/hwpmm7uGCy+oqld+k189mclWwhKu8IZJcZbXxPFHsNzW/yG7aVTH5sTD4rHnRXj8+t5AhPQ==
+firebase-admin@^11.10.1:
+  version "11.10.1"
+  resolved "https://registry.yarnpkg.com/firebase-admin/-/firebase-admin-11.10.1.tgz#5f0f83a44627e89938d350c5e4bbac76596c963e"
+  integrity sha512-atv1E6GbuvcvWaD3eHwrjeP5dAVs+EaHEJhu9CThMzPY6In8QYDiUR6tq5SwGl4SdA/GcAU0nhwWc/FSJsAzfQ==
   dependencies:
     "@fastify/busboy" "^1.2.1"
     "@firebase/database-compat" "^0.3.4"
@@ -5455,7 +5455,7 @@ firebase-admin@^11.7.0:
     node-forge "^1.3.1"
     uuid "^9.0.0"
   optionalDependencies:
-    "@google-cloud/firestore" "^6.5.0"
+    "@google-cloud/firestore" "^6.6.0"
     "@google-cloud/storage" "^6.9.5"
 
 firebase@^9.21.0:
